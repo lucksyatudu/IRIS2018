@@ -2,87 +2,204 @@
 <html>
 	<head>
 	 	<meta charset="utf-8">
+	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>IRIS'18 - IIM Indore</title>
 
 		<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
 
 		<!-- CSS -->
 		<link href="css/loader-style.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- Load an icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 		<!-- JavaScript Libraries -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
+
 		<!-- JavaScript Scripts -->
-		<!-- Uncomment after devloping home page
 		<script type="text/javascript" src="js/main.js"></script>
-		-->
 
 	</head>
 
 	<body>
-		<div class="container">
+		<div id="contentBody" class="container-fluid p-0">
 			
 			<!-- Loader -->
-			<div  id="loader">
-				<div  class="vertical-centered-box" style="background-color: #2c2d44;">
-					<div id="particles-js" class="particle-container-box">
-				  		<div id="particles-js" class="content">
-				  			<div class="logo">
-								<img src="img/logo-svg.svg" width="75" id="prism-logo">
-							</div>
-				    		<div class="loader-circle"></div>
-				    		<div class="loader-line-mask">
-				      			<div class="loader-line"></div>  
-				    		</div>
-				 	 	</div>
+			<section>
+				<div  id="loader">
+					<div  class="vertical-centered-box">
+						<div id="particles-js" class="particle-container-box">
+					  		<div id="particles-js" class="content">
+
+					  			<!-- Loader -->
+					  			<div id="section_loader">
+						  			<div class="logo">
+										<img src="img/logo-svg.svg" width="75" id="prism-logo">
+									</div>
+						    		<div class="loader-circle"></div>
+						    		<div class="loader-line-mask">
+						      			<div class="loader-line"></div>  
+						    		</div>
+
+						    		<!-- Continue -->
+						    		<div id="continue">
+						    			<button class="enter_btn" onclick="removeLoader()">Click Here</button>
+						    		</div>
+						    		<!-- Continue -->
+
+					    		</div>
+
+					    		<!-- Menu -->
+					    		<div id="menu">
+					    			<div class="row">
+						    			<div class="navbar">
+							    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+							    				<img src="img/logo-svg.svg" width="50">
+							    			</div>
+							    			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
+												  <a href="#aboutIRIS">Home</a>
+												  <a href="#news">News</a>
+												  <a href="#contactUs">Contact Us</a>
+											</div>
+										</div>
+									</div>
+					    		</div>
+					    		<!-- Menu -->
+
+					    		<!-- Left Panel -->
+					    		<div id="leftSideber" class="hidden-sm-down">
+					    			<div class="sidebar">
+									  	<a href="https://www.facebook.com/iris.iimi"  target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+									  	<a href="https://www.instagram.com/iris_iimi/"  target="_blank">
+									  		<i class="fa fa-fw fa-instagram"></i></a>
+									  	<a href="#clients"  target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+									  	<a href="https://www.youtube.com/channel/UCXVT_s3a61W9YZ7LBo0at4Q"  target="_blank">
+									  		<i class="fa fa-fw fa-youtube-play"></i></a>
+									</div>
+					    		</div>
+					    		<!-- Left Panel -->
+
+					    		<!-- Page Contents -->
+					    		<div id="contents">
+					    			<!-- Headings -->
+					    			<div id="headings" class="container">
+					    				<div class="row">
+					    					<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+				    							<div class="row heading">IRIS</div>
+				    							<div class="row heading" style="margin-top:-25px">'18</div>
+				    							<div class="row headingChild" style="margin-top: 15px">THE</div>
+				    							<div class="row headingChild" style="margin-top:-25px">FUTURE</div>
+				    							<div class="row headingChild" style="margin-top:-25px">NOW</div>
+				    							<div class="row headingChild" style="margin-top:-25px">STREAMING.</div>
+					    					</div>
+					    					<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 p-0 float-right">
+					    						<div style="border-radius: 10px;float: right; height: 100%; width: 100%">
+					    							<iframe  frameborder="0" allowfullscreen style="width: 100%;height: 100%;padding:10px" 
+					    							src="https://www.youtube.com/embed/ktCjY0OMn6s"></iframe>
+					    						</div>
+					    					</div>
+					    				</div>
+					    			</div>
+					    			<!-- Headings -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
+
+					    			<!-- Dates -->
+					    			<div class="container">
+					    				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					    					<div class="row headingChild  float-right">12-Nov To 15-Nov</div>
+					    				</div>
+					    			</div>
+					    			<!-- Dates -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
+
+					    			<!-- About IRIS -->
+					    			<div id="aboutIRIS" class="container">
+										<div>
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-5 mt-2 ml-2">
+													<H1>IRIS'18</H1>
+												</div>
+											</div>
+											
+											<div class="row fill_parent">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_body">
+													<p>Since its inception in 2001, it has emerged as flagship management-cultural fest of IIM Indore.
+													It is more of an amalgamation of talent and action involving brightest business minds across the nation.
+													Over the year,it has seen huge participation from premier institutions of the nation and high corporate inclusion.
+													IRIS has also been on the page of Guiness World Record Book</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- About IRIS -->
+
+					    			<!-- Contact Us -->
+						    		<div id="contactUs" class="container">
+										<div>
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-5 mt-2 ml-2">
+													<H1>Contact Us</H1>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
+													<div class="clearfix"></div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+													<div class="row mx-auto">
+														<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text_body">
+															<div class="row">Name</div>
+															<div class="row">email</div>
+															<div class="row">contact</div>
+														</div>
+													</div>
+													<div class="row" style="height:50px">
+														<div class="clearfix"></div>
+													</div>
+													<div class="row mx-auto">
+														<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text_body">
+															<div class="row">Name</div>
+															<div class="row">email</div>
+															<div class="row">contact</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Contact Us -->
+
+					    		</div>
+					    		<!-- Page Contents -->
+
+					 	 	</div>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<!-- Loader Scripts -->
-			<!-- Don't Remove From Here!!! -->
-			<script src="js/particles.js"></script>
-			<script src="js/app.js"></script>	
-
+				<!-- Loader Scripts -->
+				<!-- Don't Remove From Here!!! -->
+				<script src="js/particles.js"></script>
+				<script src="js/app.js"></script>	
+			</section>
 			<!-- Loader -->
-
-			<!-- Body -->
-			
-			<div>
-
-				<!-- Menu -->
-				<div></div>
-
-				<!-- About IRIS -->
-				<div></div>
-
-				<!-- Pro Nights -->
-				<div></div>
-
-				<!-- Events -->
-				<div></div>
-
-				<!-- Sports -->
-				<div></div>		
-
-				<!-- Envision -->
-				<div></div>
-
-				<!-- Our Partners -->
-				<div></div>		
-
-				<!-- Register -->
-				<div></div>
-
-				<!-- Contact Us -->
-				<div></div>
-
-				<!-- Footer -->
-				<div></div>
-			</div>
-			
-			<!-- Body -->
 
 		</div>
 	</body>
