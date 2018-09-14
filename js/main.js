@@ -18,10 +18,21 @@ function removeLoader() {
   $('#contents').delay(400).fadeIn(500);
   $('#aboutIRIS').delay(400).fadeIn(500);
   if(screen.width>=575){
-     $('#menu').delay(400).fadeIn(500);
-      $('#leftSideber').delay(400).fadeIn(500);
+     $('#menuLg').delay(400).fadeIn(500);
+     $('#leftSideber').delay(400).fadeIn(500);
+  }else{
+    $('#menuSm').delay(400).fadeIn(500);
   }
   //$('#contentBody').delay(1000).css({'height':'2000px'});
+}
+
+//Menu related functions for small screen devices
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
 }
 
 // Scroll Functions

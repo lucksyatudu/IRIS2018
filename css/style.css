@@ -60,38 +60,112 @@
 }
 
 /* Menu Related CSS */
-#menu{
-	  display:none;
-    position: fixed;
-    left: 0%;
-    top: 0%;
+.menuicon{
+  top: 5%;
+  left: 5%;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+  /* Large Screen Menu */
+  #menuLg{
+  	  display:none;
+      position: fixed;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      z-index: 1;
+  }
+
+  .navbar {
+    	overflow: hidden;
+    	background-color: rgba(51,51,51,0.65);
+    	position: fixed;
+    	top: 0;
+    	width: 100%;
+    	margin-top: -12px;
+      padding: .1rem 1rem
+  }
+
+  .navbar a {
+    	float: right;
+    	display: block;
+    	color: #f2f2f2;
+    	text-align: center;
+    	padding: 10px 10px;
+    	text-decoration: none;
+    	font-size: 17px;
+  }
+
+  .navbar a:hover {
+    	background: #ddd;
+    	color: black;
+  }
+  /* Large Screen Menu */
+
+
+  /* Small Screen Menu */
+  #menuSm{
+      display:none;
+      position: fixed;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      z-index: 1;
+      overflow: hidden;
+      background-color: rgba(51,51,51,0.8);
+  }
+  .overlay {
+    height: 0%;
     width: 100%;
-    z-index: 1;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
 }
 
-.navbar {
-  	overflow: hidden;
-  	background-color: rgba(51,51,51,0.8);
-  	position: fixed;
-  	top: 0;
-  	width: 100%;
-  	margin-top: -15px;
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
-.navbar a {
-  	float: right;
-  	display: block;
-  	color: #f2f2f2;
-  	text-align: center;
-  	padding: 14px 16px;
-  	text-decoration: none;
-  	font-size: 17px;
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-.navbar a:hover {
-  	background: #ddd;
-  	color: black;
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
 }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+  /* Small Screen Menu */
 /* Menu Related CSS */
 
 /* Sideber Related CSS */
@@ -131,7 +205,10 @@
 	font-size: 20px;
   text-align: justify;
 }
-
+.text_body_centered{
+  font-size: 20px;
+  text-align: center;
+}
 .text_head{
 	font-size: 30px;
 }

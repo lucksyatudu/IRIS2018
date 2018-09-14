@@ -5,6 +5,11 @@
 	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	 	<!-- Basic page information -->
+        <meta name="author" content="IRIS 2016">
+        <meta name="description" content="IRIS 2016 - The annual cultural and management festival, IIM Indore">
+        <meta name="keywords" content="IRIS, Indore, IIM, IIT, Finance, Fest, Festival, cultural, India, techfest, marketing, commerce, stock, economics, music">
+
 		<title>IRIS'18 - IIM Indore</title>
 
 		<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="30x30">
@@ -61,6 +66,7 @@
 
 					    		<!-- Menu -->
 					    		<?php
+					    			include "pages/menu-sm.html";
 					    			include "pages/menu.html";
 					    		?>
 					    		<!-- Menu -->
@@ -108,7 +114,9 @@
 					    			<!-- Dates -->
 					    			<div class="container">
 					    				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					    					<div class="row headingChild  float-right">12-Nov To 15-Nov</div>
+					    					<div class="row headingChild  float-right">16
+					    						<sup style="margin-top: 20px;">Th</sup> - 18
+					    						<sup style="margin-top: 20px;">Th</sup> Nov'18</div>
 					    				</div>
 					    			</div>
 					    			<!-- Dates -->
@@ -128,7 +136,20 @@
 					    			<!-- Clear Space -->
 
 					    			<!-- Pro Shows -->
+
+									<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
+
 					    			<!-- Envision -->
+					    			<?php
+					    				include "pages/envision.html";
+					    			?>
+					    			<!-- Envision -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
 					    			<!-- Events -->
 					    			<!-- Sports -->
 					    			<!-- Past Records -->
