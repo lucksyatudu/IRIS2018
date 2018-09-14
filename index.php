@@ -7,7 +7,7 @@
 
 		<title>IRIS'18 - IIM Indore</title>
 
-		<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
+		<link rel="icon" href="img/favicon.ico" type="image/gif" sizes="30x30">
 
 		<!-- CSS -->
 		<link href="css/loader-style.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 	<body>
 		<div id="contentBody" class="container-fluid p-0">
 			
-			<!-- Loader -->
+			<!-- Contents -->
 			<section>
 				<div  id="loader">
 					<div  class="vertical-centered-box">
@@ -53,27 +53,16 @@
 
 						    		<!-- Continue -->
 						    		<div id="continue">
-						    			<button class="enter_btn" onclick="removeLoader()">Click Here</button>
+						    			<button class="enter_btn" onclick="removeLoader()">Continue</button>
 						    		</div>
 						    		<!-- Continue -->
-
 					    		</div>
+					    		<!-- Loader -->
 
 					    		<!-- Menu -->
-					    		<div id="menu">
-					    			<div class="row">
-						    			<div class="navbar">
-							    			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-							    				<img src="img/logo-svg.svg" width="50">
-							    			</div>
-							    			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
-												  <a href="#aboutIRIS">Home</a>
-												  <a href="#news">News</a>
-												  <a href="#contactUs">Contact Us</a>
-											</div>
-										</div>
-									</div>
-					    		</div>
+					    		<?php
+					    			include "pages/menu.html";
+					    		?>
 					    		<!-- Menu -->
 
 					    		<!-- Left Panel -->
@@ -82,7 +71,7 @@
 									  	<a href="https://www.facebook.com/iris.iimi"  target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
 									  	<a href="https://www.instagram.com/iris_iimi/"  target="_blank">
 									  		<i class="fa fa-fw fa-instagram"></i></a>
-									  	<a href="#clients"  target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+									  	<a href="https://twitter.com/Iris_IIMI"  target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
 									  	<a href="https://www.youtube.com/channel/UCXVT_s3a61W9YZ7LBo0at4Q"  target="_blank">
 									  		<i class="fa fa-fw fa-youtube-play"></i></a>
 									</div>
@@ -129,62 +118,33 @@
 					    			<!-- Clear Space -->
 
 					    			<!-- About IRIS -->
-					    			<div id="aboutIRIS" class="container">
-										<div>
-											<div class="row">
-												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-5 mt-2 ml-2">
-													<H1>IRIS'18</H1>
-												</div>
-											</div>
-											
-											<div class="row fill_parent">
-												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_body">
-													<p>Since its inception in 2001, it has emerged as flagship management-cultural fest of IIM Indore.
-													It is more of an amalgamation of talent and action involving brightest business minds across the nation.
-													Over the year,it has seen huge participation from premier institutions of the nation and high corporate inclusion.
-													IRIS has also been on the page of Guiness World Record Book</p>
-												</div>
-											</div>
-										</div>
-									</div>
+					    			<?php
+					    				include "pages/about.html";
+					    			?>
 									<!-- About IRIS -->
 
+									<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
+
+					    			<!-- Pro Shows -->
+					    			<!-- Envision -->
+					    			<!-- Events -->
+					    			<!-- Sports -->
+					    			<!-- Past Records -->
+					    			<!-- Gallery -->
+					    			<!-- Sponsors -->
+					    			<!-- Register -->
+
 					    			<!-- Contact Us -->
-						    		<div id="contactUs" class="container">
-										<div>
-											<div class="row">
-												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-5 mt-2 ml-2">
-													<H1>Contact Us</H1>
-												</div>
-											</div>
-											
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
-													<div class="clearfix"></div>
-												</div>
-												<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-													<div class="row mx-auto">
-														<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text_body">
-															<div class="row">Name</div>
-															<div class="row">email</div>
-															<div class="row">contact</div>
-														</div>
-													</div>
-													<div class="row" style="height:50px">
-														<div class="clearfix"></div>
-													</div>
-													<div class="row mx-auto">
-														<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text_body">
-															<div class="row">Name</div>
-															<div class="row">email</div>
-															<div class="row">contact</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+					    			<?php
+					    				include "pages/contactus.html";
+					    			?>
 									<!-- Contact Us -->
+
+									<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
 
 					    		</div>
 					    		<!-- Page Contents -->
@@ -194,12 +154,12 @@
 					</div>
 				</div>
 
-				<!-- Loader Scripts -->
+				<!-- Particle Scripts -->
 				<!-- Don't Remove From Here!!! -->
 				<script src="js/particles.js"></script>
 				<script src="js/app.js"></script>	
 			</section>
-			<!-- Loader -->
+			<!-- Contents -->
 
 		</div>
 	</body>
