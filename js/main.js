@@ -17,6 +17,7 @@ function removeLoader() {
   $('#section_loader').delay(400).fadeOut(500);
   $('#contents').delay(400).fadeIn(500);
   $('#aboutIRIS').delay(400).fadeIn(500);
+  $('.vertical-centered-box').css({'overflow':'auto'})
   if(screen.width>=575){
      $('#menuLg').delay(400).fadeIn(500);
      $('#leftSideber').delay(400).fadeIn(500);
@@ -42,11 +43,4 @@ $(window).bind("scroll", function() {
     } else {
         $(".navbar").css({'background-color':'rgba(51,51,51,0.8)'});
     }
-    /*if ($(this).scrollTop() > 520) {
-        $("#contactUs").fadeIn();
-        $("#aboutIRIS").stop().fadeOut();
-    } else {
-        $("#contactUs").stop().fadeOut();
-        $("#aboutIRIS").fadeIn();
-    }*/
 });

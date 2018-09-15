@@ -6,8 +6,8 @@
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	 	<!-- Basic page information -->
-        <meta name="author" content="IRIS 2016">
-        <meta name="description" content="IRIS 2016 - The annual cultural and management festival, IIM Indore">
+        <meta name="author" content="IRIS 2018">
+        <meta name="description" content="IRIS 2018 - The annual cultural and management festival, IIM Indore">
         <meta name="keywords" content="IRIS, Indore, IIM, IIT, Finance, Fest, Festival, cultural, India, techfest, marketing, commerce, stock, economics, music">
 
 		<title>IRIS'18 - IIM Indore</title>
@@ -27,9 +27,10 @@
 
 
 		<!-- JavaScript Libraries -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script src="js/angular.min.js"></script>
-		<script src="js/angular-route.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-route.min.js"></script>
+		<script src="lib/anime.min.js"></script>
 
 		<!-- JavaScript Scripts -->
 		<script type="text/javascript" src="js/main.js"></script>
@@ -113,10 +114,18 @@
 
 					    			<!-- Dates -->
 					    			<div class="container">
-					    				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					    					<div class="row headingChild  float-right">16
-					    						<sup style="margin-top: 20px;">Th</sup> - 18
-					    						<sup style="margin-top: 20px;">Th</sup> Nov'18</div>
+					    				<div class="row">
+						    				<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0 hidden-md-down">
+						    					<?php
+						    						include "animations/line.html";
+						    					?>
+						    				</div>
+						    				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						    					<div class="row headingChild">16
+						    						<sup style="margin-top: 20px;">Th</sup> - 18
+						    						<sup style="margin-top: 20px;">Th</sup> Nov'18
+						    					</div>
+						    				</div>
 					    				</div>
 					    			</div>
 					    			<!-- Dates -->
@@ -150,12 +159,40 @@
 					    			<!-- Clear Space -->
 					    			<div class="container clearfix" style="height: 150px"></div>
 					    			<!-- Clear Space -->
+					    			
 					    			<!-- Events -->
+					    			<?php
+					    				include "pages/events.html";
+					    			?>
+					    			<!-- Events -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
+
 					    			<!-- Sports -->
+					    			<?php
+					    				include "pages/sports.html";
+					    			?>
+					    			<!-- Sports -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
+
 					    			<!-- Past Records -->
 					    			<!-- Gallery -->
 					    			<!-- Sponsors -->
+					    			
 					    			<!-- Register -->
+					    			<?php
+					    				include "pages/register.html";
+					    			?>
+					    			<!-- Register -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
 
 					    			<!-- Contact Us -->
 					    			<?php

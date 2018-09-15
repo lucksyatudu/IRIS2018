@@ -18,7 +18,7 @@ body .vertical-centered-box {
   background-image: linear-gradient(to bottom right, red, yellow);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: auto;
+  overflow: hidden;
   z-index: -1;
   /*background-color: #2c2d44;*/
 }
