@@ -1,4 +1,4 @@
-<div id="events" class="container">
+<div id="events" class="container" ng-controller="eventController">
 	<div>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-5 mt-2 ml-2">
@@ -7,13 +7,13 @@
 		</div>
 		
 		<div class="container eventContainer">
-
-			<hr>
-			<div class="row eventListElement">
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			<div>
+				<hr>
+				<div class="row eventListElement">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" ng-click="viewEventDetails('ashwamedha')">
 						<img src="img/logo-svg.svg" width="75" class="eventLogo">
 					</div>
-					<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+					<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10" ng-click="viewEventDetails('ashwamedha')">
 						<div class="row eventHead">Ashwamedha</div>
 						<div class="row text_body">Congue nec, ullamcorper, consectetuer mollis pulvinar. Fusce purus rutrum pretium sem sit litora libero id ligula dignissim amet, duis. Donec.
 						</div>
@@ -21,11 +21,12 @@
 					<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 float-right">
 						<div class="row">
 							<ul>
-								<li><button class="eventViewButton">View</button></li>
-								<li><button class="eventRegisterButton">Register</button></li>
+								<li><button class="eventViewButton" ng-click="viewEventDetails('ashwamedha')">View</button></li>
+								<li><button class="eventRegisterButton" ng-click="register('ashwamedha')">Register</button></li>
 							</ul>
 						</div>
 					</div>
+				</div>
 			</div>
 
 			<hr>
@@ -149,4 +150,11 @@
 		
 		</div>
 	</div>
+
+	<!-- View Event / Sport Details -->
+			<?php
+				include "pages/eventdetails.html";
+			?>
+			<!-- View Event / Sport Details -->
+	
 </div>

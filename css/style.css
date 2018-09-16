@@ -100,12 +100,36 @@
   }
   /* Events */
 
+  /* Events Details */
+  #eventDetails{
+    display:none;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    overflow: hidden;
+    background-color: rgba(51,51,51,1);
+    color: #fff;
+  }
+  .eventDetailsContents {
+    position: relative;
+    margin-top: 4rem;
+  }
+  .closeEventDetail{
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  /* Events Details */
+
   /* Register */
   .register{
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
     margin-top: 3%;
     padding: 3%;
-}
+    position: relative;
+  }
 .register-left{
     text-align: center;
     color: #fff;

@@ -34,10 +34,11 @@
 
 		<!-- JavaScript Scripts -->
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/irisController.js"></script>
 
 	</head>
 
-	<body>
+	<body ng-app="IrisApp">
 		<div class="container-fluid p-0">
 			
 			<!-- Loader -->
@@ -194,6 +195,14 @@
 					    			<!-- Past Records -->
 					    			<!-- Gallery -->
 					    			<!-- Sponsors -->
+					    			<?php
+					    				include "pages/sponsors.html";
+					    			?>
+					    			<!-- Sponsors -->
+
+					    			<!-- Clear Space -->
+					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<!-- Clear Space -->
 
 					    			<!-- Register -->
 					    			<?php

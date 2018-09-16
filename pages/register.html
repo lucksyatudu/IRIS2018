@@ -1,4 +1,42 @@
+
+
 <div  id="register" class="container register">
+
+<!-- Registration not Started -->
+<div id="noRegister" style="height:100%;width:100%;background:rgba(50,50,50,0.6);top:0;left:0;    position: absolute;
+    z-index: 2; display:none;">
+    <h1 style="color:#fff;    text-align: center;">
+        Registration not started.
+    </h1>
+</div>
+<script type="text/javascript">
+    $(".register").mouseenter(
+        function(){
+            $('#noRegister').fadeIn(100);
+        });
+
+    $(".register").mouseleave(
+        function(){
+            $('#noRegister').fadeOut(100);
+        });
+
+    $(".register").focus(
+        function(){
+            $('#noRegister').fadeOut(100);
+        });    
+
+    $(".register").focusin(
+        function(){
+            $('#noRegister').fadeOut(100);
+        });
+
+    $(".register").focusout(
+        function(){
+            $('#noRegister').fadeOut(100);
+        });    
+</script>
+<!-- Registration not Started -->
+
     <div class="row">
         <div class="col-md-3 register-left">
             <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
