@@ -8,6 +8,7 @@ $(document).ready(function () {
     $('.loader-line').delay(400).fadeOut(500);
     $('#continue').delay(400).fadeIn(500);
     //$('.particles-js-canvas-el').css({'z-index':'0'});
+
   })
 })
 
@@ -17,14 +18,18 @@ function removeLoader() {
   $('#section_loader').delay(400).fadeOut(500);
   $('#contents').delay(400).fadeIn(500);
   $('#aboutIRIS').delay(400).fadeIn(500);
-  $('.vertical-centered-box').css({'overflow':'auto'})
+  //$('.vertical-centered-box').css({'overflow':'auto'})
   if(screen.width>=575){
      $('#menuLg').delay(400).fadeIn(500);
      $('#leftSideber').delay(400).fadeIn(500);
   }else{
     $('#menuSm').delay(400).fadeIn(500);
   }
-  //$('#contentBody').delay(1000).css({'height':'2000px'});
+
+  setTimeout(function () {
+    skrollr.get().refresh();
+    //console.log("refreshed");
+  }, 500);
 }
 
 //Menu related functions for small screen devices
@@ -38,7 +43,13 @@ function closeNav() {
 
 // Scroll Functions
 $(window).bind("scroll", function() {
-  if ($(this).scrollTop() > 10) {
+/*
+  setTimeout(function () {
+    skrollr.get().refresh();
+    //console.log("refreshed");
+  }, 0);
+*/
+  if ($(this).scrollTop() > 250) {
         $(".navbar").css({'background-color':'rgba(51,51,51,1)'});
     } else {
         $(".navbar").css({'background-color':'rgba(51,51,51,0.8)'});

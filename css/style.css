@@ -74,6 +74,9 @@
   /*.eventListElement :hover~.eventViewButton{
     display: inline-block;
   }*/
+  .eventListElement ul {
+    list-style: none;
+  }
   .eventViewButton{
     width: -webkit-fill-available;
     background: transparent;

@@ -38,16 +38,14 @@
 	</head>
 
 	<body>
-		<div id="contentBody" class="container-fluid p-0">
+		<div class="container-fluid p-0">
 			
-			<!-- Contents -->
+			<!-- Loader -->
 			<section>
 				<div  id="loader">
 					<div  class="vertical-centered-box">
 						<div id="particles-js" class="particle-container-box">
 					  		<div id="particles-js" class="content">
-
-					  			<!-- Loader -->
 					  			<div id="section_loader">
 						  			<div class="logo">
 										<img src="img/logo-svg.svg" width="75" id="prism-logo">
@@ -63,7 +61,20 @@
 						    		</div>
 						    		<!-- Continue -->
 					    		</div>
-					    		<!-- Loader -->
+					    		<script src="js/particles.js"></script>
+								<script src="js/app.js"></script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Loader -->
+			<!-- Contents -->
+			<section>
+				<div id="content_body">
+					<div>
+						<div>
+							<div>			
 
 					    		<!-- Menu -->
 					    		<?php
@@ -183,7 +194,7 @@
 					    			<!-- Past Records -->
 					    			<!-- Gallery -->
 					    			<!-- Sponsors -->
-					    			
+
 					    			<!-- Register -->
 					    			<?php
 					    				include "pages/register.html";
@@ -211,14 +222,15 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- Particle Scripts -->
-				<!-- Don't Remove From Here!!! -->
-				<script src="js/particles.js"></script>
-				<script src="js/app.js"></script>	
 			</section>
+			<script src="lib/skrollr.min.js"></script>
 			<!-- Contents -->
 
 		</div>
 	</body>
+
+	<script>
+		var s = skrollr.init();
+	</script>
+
 </html>

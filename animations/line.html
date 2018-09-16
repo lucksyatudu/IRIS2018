@@ -1,26 +1,6 @@
-<svg version="1.1" width="100%" viewBox="0 0 500 60">
-	<polygon id="dateline_1" fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" points="0,25 0,25 0,0 0,0 "/>
-	<polygon id="dateline_2" fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" points="0,60 0,60 0,35 0,35"/>
-</svg>
-
-<script>
-	var morphing = anime({
-	  targets: '#dateline_1',
-	  points: [
-	    { value: '0,25 959.5,25 959.5,0 0,0 ' }
-	  ],
-	  easing: 'easeOutQuad',
-	  duration: 2000,
-	  loop: false
-	});
-
-	var morphing = anime({
-	  targets: '#dateline_2',
-	  points: [
-	    { value: '0,60 959.5,60 959.5,35 0,35' }
-	  ],
-	  easing: 'easeOutQuad',
-	  duration: 2000,
-	  loop: false
-	});
-</script>
+<div style="height:100%" data-bottom-bottom="width:0%;" data-center-top="width:100%;">
+	<svg version="1.1" height="100%"  width="100%" viewBox="0 0 500 60">
+		<polygon id="dateline_1" fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" points="0,25 959.5,25 959.5,0 0,0"/>
+		<polygon id="dateline_2" fill="#FFFFFF" stroke="#ffffff" stroke-miterlimit="10" points="0,60 959.5,60 959.5,35 0,35"/>
+	</svg>
+</div>
