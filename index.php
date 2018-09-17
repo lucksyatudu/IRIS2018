@@ -35,6 +35,7 @@
 		<!-- JavaScript Scripts -->
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/irisController.js"></script>
+		<script type="text/javascript" src="js/animationDesktop.js"></script>
 
 	</head>
 

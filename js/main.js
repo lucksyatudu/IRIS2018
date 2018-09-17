@@ -8,9 +8,8 @@ $(document).ready(function () {
     $('.loader-line').delay(400).fadeOut(500);
     $('#continue').delay(400).fadeIn(500);
     //$('.particles-js-canvas-el').css({'z-index':'0'});
-
   })
-})
+});
 
 //Post Page Load Functions
 function removeLoader() {
@@ -43,12 +42,6 @@ function closeNav() {
 
 // Scroll Functions
 $(window).bind("scroll", function() {
-/*
-  setTimeout(function () {
-    skrollr.get().refresh();
-    //console.log("refreshed");
-  }, 0);
-*/
   if ($(this).scrollTop() > 250) {
         $(".navbar").css({'background-color':'rgba(51,51,51,1)'});
     } else {

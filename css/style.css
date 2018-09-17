@@ -51,6 +51,7 @@
   /* Events */
   .eventHead{
     font-size: 30px;
+    color: #fff;
   }
   .eventLogo{
     float: right;
@@ -125,9 +126,9 @@
 
   /* Register */
   .register{
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(10,10,10,0.4)), to(rgba(10,10,10,0.4)), color-stop(50%, rgba(10,10,10,0.6)));;
     margin-top: 3%;
-    padding: 3%;
+    padding: 0;
     position: relative;
   }
 .register-left{
@@ -136,23 +137,13 @@
     margin-top: 4%;
     font-size: 0.8rem;
 }
-.register-left input{
-    border: none;
-    border-radius: 1.5rem;
-    padding: 2%;
-    width: 60%;
-    background: #f8f9fa;
-    font-weight: bold;
-    color: #383d41;
-    margin-top: 30%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
 .register-right{
-    background: #f8f9fa;
-    border-top-left-radius: 10% 50%;
-    border-bottom-left-radius: 10% 50%;
+    border-left: 3px white;
+    border-style: solid;
     font-size: 0.8rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
 }
 .register-left img{
     margin-top: 15%;
@@ -180,11 +171,10 @@
 }
 .btnRegister{
     float: right;
-    margin-top: 10%;
-    border: none;
-    border-radius: 1.5rem;
+    margin-top: 0;
+    border: 4px solid #ffffff;
     padding: 2%;
-    background: #0062cc;
+    background: none;
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -206,21 +196,11 @@
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
-.register .nav-tabs .nav-link:hover{
-    border: none;
-}
-.register .nav-tabs .nav-link.active{
-    width: 100px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-}
 .register-heading{
     text-align: center;
     margin-top: 8%;
     margin-bottom: -15%;
-    color: #495057;
+    color: #ffffff;
 }
   /* Register */
 
@@ -384,12 +364,18 @@
 .text_body{
 	font-size: 20px;
   text-align: justify;
+  color: #fff;
 }
 .text_body_centered{
   font-size: 20px;
   text-align: center;
+  color: #fff;
 }
 .text_head{
 	font-size: 30px;
+  color: #fff;
+}
+.headings{
+  color: #fff;
 }
 /* Text Related CSS */
