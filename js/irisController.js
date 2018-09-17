@@ -1,12 +1,13 @@
 var IrisApp=angular.module('IrisApp',[]);
 
-IrisApp.controller('eventController',eventController);
-function eventController($scope, $http){
+IrisApp.controller('irisController',irisController);
+function irisController($scope, $http){
 	//console.log("angular loaded");
 
 	$scope.viewEventDetails=function(name){
 		console.log(name);
-		$('#eventDetails').delay(400).fadeIn(500);
+		$('#eventDetails').delay(400).fadeIn(500).addClass("animated fadeIn");
+		$('#eventDetails').delay(400).fadeIn(500).removeClass("animated fadeIn");
 	}
 
 	$scope.register=function(name){
@@ -14,6 +15,8 @@ function eventController($scope, $http){
 	}
 
 	$scope.close=function(name){
-		$('#'+name).fadeOut(500);
+		console.log("a");
+		$('#'+name).delay(400).fadeOut(500).addClass("animated zoomOut");
+		$('#'+name).delay(400).fadeOut(500).removeClass("animated zoomOut");
 	}
 }

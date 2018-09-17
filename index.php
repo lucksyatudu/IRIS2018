@@ -42,7 +42,7 @@
 
 	</head>
 
-	<body ng-app="IrisApp">
+	<body ng-app="IrisApp" ng-controller="irisController">
 		<div class="container-fluid p-0">
 			
 			<!-- Loader -->
@@ -74,7 +74,7 @@
 				</div>
 			</section>
 			<!-- Loader -->
-			
+
 			<!-- Contents -->
 			<section>
 				<div id="content_body">
@@ -231,6 +231,13 @@
 
 					    		</div>
 					    		<!-- Page Contents -->
+
+					    		<!-- View Event / Sport Details -->
+								<?php
+									include "pages/eventdetails.html";
+								?>
+								<!-- View Event / Sport Details -->
+	
 
 					 	 	</div>
 						</div>
