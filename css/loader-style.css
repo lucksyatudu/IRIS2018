@@ -20,8 +20,9 @@ body .vertical-centered-box {
   #29323c , #485563
   red, yellow
   #42275a , #734b6d 
+  #141e30 , #243b55
   */
-  background-image: linear-gradient(to bottom right, #141e30 , #243b55 );
+  background-image: linear-gradient(to bottom right, #150921 , #411b4a );
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;

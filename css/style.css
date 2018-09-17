@@ -244,7 +244,8 @@
     	top: 0;
     	width: 100%;
     	margin-top: -12px;
-      padding: .1rem 1rem
+      padding: .1rem 1rem;
+      font-family: monospace;
   }
 
   .navbar a {
@@ -290,9 +291,10 @@
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
     text-align: center;
+    font-family: monospace;
     margin-top: 30px;
 }
 
