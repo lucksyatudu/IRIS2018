@@ -140,6 +140,16 @@
   }
   /* Events Details */
 
+  /* Sponsors */
+  .sponsorItem{
+    width: 20%;
+  }
+  .sponsorImg{
+    width: 100%;
+    height: auto;
+  }
+  /* Sponsors */
+
   /* Register */
   .register{
     background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(10,10,10,0.4)), to(rgba(10,10,10,0.4)), color-stop(50%, rgba(10,10,10,0.6)));;

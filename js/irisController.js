@@ -2,7 +2,25 @@ var IrisApp=angular.module('IrisApp',[]);
 
 IrisApp.controller('irisController',irisController);
 function irisController($scope, $http){
-	//console.log("angular loaded");
+
+	//init
+	$scope.sponsors;
+
+	var getSponsors=function(){
+		$http.get("php/getSponsors.php")
+   			.then(function (response) {
+   				//console.log(response);
+   				$scope.sponsors = response.data;
+   				console.log($scope.sponsors);
+   			});
+	}
+
+	var init=function(){
+		getSponsors();
+		
+	}
+
+	init();
 
 	$scope.viewEventDetails=function(name){
 		console.log(name);

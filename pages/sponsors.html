@@ -7,78 +7,11 @@
 			</div>
 		</div>
 		
-		<div class="row">
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
-			</div>
-			<div class="item">
-				<img src="img/logo-svg.svg" width="75">
+		<div class="row fill_parent">
+			<div class="sponsorItem" ng-repeat="x in sponsors">
+				<div class="p-1 m-1">
+					<a class="sponsorImg" ng-href="{{x.url}}"><img ng-src="{{x.img}}" height="150" ng-title="{{x.name}}"></a>
+				</div>
 			</div>
 		</div>
 	</div>
