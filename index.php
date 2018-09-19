@@ -17,6 +17,7 @@
 		<!-- CSS -->
 		<link href="css/loader-style.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/canvas-style.css" rel="stylesheet">
 
 		<!-- Load an icon library -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,6 +40,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/irisController.js"></script>
 		<script type="text/javascript" src="js/animationDesktop.js"></script>
+		<script type="text/javascript" src="js/canvas.js"></script>
 
 	</head>
 
@@ -74,7 +76,10 @@
 				</div>
 			</section>
 			<!-- Loader -->
-
+			<!--
+			<?php
+		    	include "pages/canvas/background-layers.html";
+		    ?> -->
 			<!-- Contents -->
 			<section>
 				<div id="content_body">
@@ -98,6 +103,8 @@
 									  	<a href="https://twitter.com/Iris_IIMI"  target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
 									  	<a href="https://www.youtube.com/channel/UCXVT_s3a61W9YZ7LBo0at4Q"  target="_blank">
 									  		<i class="fa fa-fw fa-youtube-play"></i></a>
+									  	<a href="https://en.wikipedia.org/wiki/IRIS_(Management_Festival)"  target="_blank">
+									  		<i class="fa fa-fw fa-wikipedia-w"></i></a>
 									</div>
 					    		</div>
 					    		<!-- Left Panel -->
@@ -126,16 +133,42 @@
 					    			<!-- Headings -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 50px"></div>
 					    			<!-- Clear Space -->
+
+
+					    			<div class="container" style="width:100%">
+					    				<?php
+					    				include "animations/lines-1.svg";
+					    				?>-->
+					    			</div>
+
+					    			<div class="container">
+						    			<div id="blockDates">
+						    				<?php
+						    				include "img/date-title.svg";
+						    			?>
+						    			</div>
+						    			<script type="text/javascript">
+						    			
+						    				var lineDrawing = anime({
+											  	targets: '#blockDates .lines path',
+											  	strokeDashoffset: [anime.setDashoffset, 0],
+											  	easing: 'easeInOutSine',
+											  	duration: 1500,
+											  	delay: function(el, i) { return i * 50 },
+											  	direction: 'alternate',
+											  	loop: true
+											});
+						    			</script>
+						    		</div>
+					    			
 
 					    			<!-- Dates -->
 					    			<div class="container">
 					    				<div class="row">
 						    				<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0 hidden-md-down">
-						    					<?php
-						    						include "animations/line.html";
-						    					?>
+						    					<div class="clearfix"></div>
 						    				</div>
 						    				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						    					<div class="row headingChild">16
@@ -144,12 +177,19 @@
 						    					</div>
 						    				</div>
 					    				</div>
+					    				<hr class="section-seperator-right" data--10-bottom="width:0%" data-center-top="width:50%">
 					    			</div>
 					    			<!-- Dates -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 50px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-2.svg";
+					    				?>-->
+					    			</div>
 
 					    			<!-- About IRIS -->
 					    			<?php
@@ -158,9 +198,19 @@
 									<!-- About IRIS -->
 
 									<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
 
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-3.svg";
+					    				?>-->
+					    			</div>
+
+					    			<!-- Pro Shows -->
+					    			<?php
+					    				include "pages/pronites.html";
+					    			?>
 					    			<!-- Pro Shows -->
 
 									<!-- Clear Space -->

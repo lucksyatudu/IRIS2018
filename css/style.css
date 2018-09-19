@@ -32,6 +32,22 @@
 
 /* Section Related CSS */
 
+.section-seperator-left { 
+    height: 2px;
+    border: 0;
+    background: #ffffff;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    float: left;
+    position: absolute;
+  }
+.section-seperator-right { 
+    height: 2px;
+    border: 0;
+    background: #ffffff;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255,255,255,0)), to(rgba(255,255,255,0.8)));
+    float: right;
+  }
+
   /* Heading */
   .headings{
     margin-top: 50px;
@@ -381,3 +397,30 @@
   color: #fff;
 }
 /* Text Related CSS */
+
+/* Scrollbar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+    background-color: none;
+  }
+
+  /* Track #F5F5F5*/
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: none;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #eee; 
+  }
+/*Scrollbar*/
