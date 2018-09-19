@@ -140,7 +140,7 @@
 					    			<div class="container" style="width:100%">
 					    				<?php
 					    				include "animations/lines-1.svg";
-					    				?>-->
+					    				?>
 					    			</div>
 
 					    			<div class="container">
@@ -188,7 +188,7 @@
 					    			<div class="container">
 					    				<?php
 					    				include "animations/lines-2.svg";
-					    				?>-->
+					    				?>
 					    			</div>
 
 					    			<!-- About IRIS -->
@@ -204,7 +204,7 @@
 					    			<div class="container">
 					    				<?php
 					    				include "animations/lines-3.svg";
-					    				?>-->
+					    				?>
 					    			</div>
 
 					    			<!-- Pro Shows -->
@@ -214,8 +214,14 @@
 					    			<!-- Pro Shows -->
 
 									<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-4.svg";
+					    				?>
+					    			</div>
 
 					    			<!-- Envision -->
 					    			<?php
@@ -224,9 +230,15 @@
 					    			<!-- Envision -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
 					    			
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-5.svg";
+					    				?>
+					    			</div>
+
 					    			<!-- Events -->
 					    			<?php
 					    				include "pages/events.html";
@@ -234,8 +246,14 @@
 					    			<!-- Events -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-6.svg";
+					    				?>
+					    			</div>
 
 					    			<!-- Sports -->
 					    			<?php
@@ -244,8 +262,14 @@
 					    			<!-- Sports -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-7.svg";
+					    				?>
+					    			</div>
 
 					    			<!-- Past Records -->
 					    			<!-- Gallery -->
@@ -256,8 +280,14 @@
 					    			<!-- Sponsors -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-8.svg";
+					    				?>
+					    			</div>
 
 					    			<!-- Register -->
 					    			<?php
@@ -266,8 +296,14 @@
 					    			<!-- Register -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-9.svg";
+					    				?>
+					    			</div>
 
 					    			<!-- Contact Us -->
 					    			<?php
@@ -276,8 +312,14 @@
 									<!-- Contact Us -->
 
 									<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 150px"></div>
+					    			<div class="container clearfix" style="height: 20px"></div>
 					    			<!-- Clear Space -->
+
+					    			<div class="container">
+					    				<?php
+					    				include "animations/lines-10.svg";
+					    				?>
+					    			</div>
 
 					    		</div>
 					    		<!-- Page Contents -->
