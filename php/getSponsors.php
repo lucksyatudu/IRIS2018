@@ -4,21 +4,19 @@
 $myFile = 'logininfo.txt';
 $lines = file($myFile);
 $variables = array();
+//echo "abs";
 foreach ($lines as $line) {
-    $tempArray = explode( ": ", $line ); 			//Assuming file is of the form server: localhost/n username: abc/n password: 123
+	//echo $line;
+    $tempArray = explode( ": ", $line );
     $variables[$tempArray[0]] = $tempArray[1];
 }
 
-$servername = $variables[server]
-$username =  $variables[username]
-$password = $variables[password]
+$host = $variables[server];
+$username =  $variables[username];
+$password = $variables[password];
+$dbname = $variables[dbname];
 */
-//$q=$_GET[];
-
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
-$dbname="iris"; // Database name 
+include "login.php";
 
 $link = new mysqli($host, $username, $password, $dbname) or die("Unable to connect to MySQL");
 //$link = mysql_connect("$host", "$username", "$password")or die("cannot connect"); 

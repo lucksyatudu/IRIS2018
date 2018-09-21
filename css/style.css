@@ -115,6 +115,10 @@
     margin-top: 30px;
     cursor: pointer;
   }
+  .eventImg{
+    max-width: 100%;
+    height: auto;
+  }
   /* Events */
 
   /* Events Details */

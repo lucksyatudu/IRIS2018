@@ -1,4 +1,24 @@
 <svg version="1.1" width="100%" height="850px" viewBox="0 0 501 850">
+	<defs
+   id="defs3747"><linearGradient
+     inkscape:collect="always"
+     id="linearGradient3769"><stop
+       style="stop-color:#ffffff;stop-opacity:0.3;"
+       offset="0"
+       id="stop3765" /><stop
+       style="stop-color:#ffffff;stop-opacity:0;"
+       offset="1"
+       id="stop3767" /></linearGradient><radialGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient3769"
+     id="radialGradient3773"
+     cx="694.23389"
+     cy="1234.9346"
+     fx="694.23389"
+     fy="1234.9346"
+     r="617.1701"
+     gradientTransform="matrix(-0.4230337,-0.46306705,1.1332314,0.16834814,-344.53648,418.16238)"
+     gradientUnits="userSpaceOnUse" /></defs>
 <style type="text/css">
 <![CDATA[
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:4;
@@ -17,4 +37,15 @@
 <!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="750" cy="800" r="9.156"/> -->
 <!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="116" y1="267.5" x2="161" y2="267.5"/>
 <line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="182" y1="267.5" x2="474" y2="267.5"/>-->
+
+<rect
+   style="fill:url(#radialGradient3773);fill-opacity:1;stroke-width:2.56225777"
+   id="rect3759"
+   width="1234.3402"
+   height="436.10385"
+   x="-105.85511"
+   y="-135.68159"
+   ry="0"
+   transform="matrix(0.81696259,0.57669067,-0.92242988,0.38616463,0,0)"
+   data-0="opacity:0" data--800-bottom="opacity:0.8" />
 </svg>
