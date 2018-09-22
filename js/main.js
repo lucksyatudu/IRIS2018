@@ -33,6 +33,7 @@ $(document).ready(function () {
     } // End if
   });
   
+  //jQuery.scrollspeed(100,800); 
 });
 
 //Post Page Load Functions
