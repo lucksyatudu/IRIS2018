@@ -38,8 +38,8 @@
 <!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="172.375" cy="25.375" r="9.156"/>-->
 <line class="st1" data--50-bottom="stroke-dashoffset:6000;" data-center-top="stroke-dashoffset:0;" x1="750" y1="25" x2="750" y2="150"/>
 <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="750" cy="150" r="4.156"/>
-<line class="st1" data-0="stroke-dashoffset:16000;" data--50-bottom="stroke-dashoffset:0;" x2="-180" y1="150" x1="750" y2="800"/>
-<circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="800" r="4.156"/>
+<line class="st1" data-0="stroke-dashoffset:16000;" data--50-bottom="stroke-dashoffset:0;" x2="250" y1="150" x1="750" y2="502"/>
+<circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="250" cy="502" r="4.156"/>
 <!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="750" cy="800" r="9.156"/> -->
 <!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="116" y1="267.5" x2="161" y2="267.5"/>
 <line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="182" y1="267.5" x2="474" y2="267.5"/>-->
@@ -52,4 +52,161 @@
      y="372.28802"
      transform="matrix(0.81927607,-0.57339927,0.9482409,0.31755187,0,0)"
      data-0="opacity:0" data--800-bottom="opacity:0.8" />
+
+<g
+     id="g644"
+     transform="translate(-210.31647,447.20348)"  class="st2"
+       data-bottom-top="fill-opacity:0;" data-bottom-bottom="fill-opacity:0.8;">
+    <g
+       id="g497">
+  <g
+   id="g495">
+    <path
+   id="path493"
+   d="M 192.253,60.126 V 88.294 C 123.86,57.245 43.247,87.518 12.197,155.911 c -31.05,68.393 -0.776,149.006 67.616,180.056 35.725,16.219 76.714,16.219 112.439,0 v 28.16 h 16 v -304 h -15.999 z m 0,219.76 C 154.83,310.896 99.355,305.697 68.345,268.274 37.335,230.851 42.534,175.376 79.957,144.366 c 32.568,-26.987 79.728,-26.987 112.296,0 z m 0,-155.304 C 143.902,93.578 79.572,107.642 48.568,155.993 c -31.004,48.351 -16.94,112.681 31.411,143.685 34.21,21.936 78.064,21.936 112.274,0 v 18.488 C 133.691,349.194 61.064,326.874 30.035,268.312 -0.994,209.75 21.328,137.123 79.89,106.094 c 35.141,-18.619 77.223,-18.619 112.363,0 z"
+   inkscape:connector-curvature="0" />
+
+  </g>
+
+</g>
+    <g
+       id="g503">
+  <g
+   id="g501">
+    <rect
+   id="rect499"
+   height="16"
+   width="56"
+   y="84.125999"
+   x="224.25301" />
+
+  </g>
+
+</g>
+    <g
+       id="g509">
+  <g
+   id="g507">
+    <rect
+   id="rect505"
+   height="16"
+   width="56"
+   y="260.12601"
+   x="240.25301" />
+
+  </g>
+
+</g>
+    <g
+       id="g515">
+  <g
+   id="g513">
+    <rect
+   id="rect511"
+   height="16"
+   width="56"
+   y="172.12601"
+   x="240.25301" />
+
+  </g>
+
+</g>
+    <g
+       id="g521">
+  <g
+   id="g519">
+    <rect
+   id="rect517"
+   height="16"
+   width="24"
+   y="340.12601"
+   x="368.25299" />
+
+  </g>
+
+</g>
+    <g
+       id="g527">
+  <g
+   id="g525">
+    <rect
+   id="rect523"
+   height="16"
+   width="24"
+   y="348.12601"
+   x="224.25301" />
+
+  </g>
+
+</g>
+    <g
+       id="g533">
+  <g
+   id="g531">
+    <rect
+   id="rect529"
+   height="16"
+   width="56"
+   y="108.126"
+   x="328.25299" />
+
+  </g>
+
+</g>
+    <g
+       id="g539">
+  <g
+   id="g537">
+    <rect
+   id="rect535"
+   height="16"
+   width="56"
+   y="60.125999"
+   x="368.25299" />
+
+  </g>
+
+</g>
+    <g
+       id="g545">
+  <g
+   id="g543">
+    <rect
+   id="rect541"
+   height="16"
+   width="16"
+   y="260.12601"
+   x="312.25299" />
+
+  </g>
+
+</g>
+    <g
+       id="g551">
+  <g
+   id="g549">
+    <rect
+   id="rect547"
+   height="16"
+   width="32"
+   y="196.12601"
+   x="384.25299" />
+
+  </g>
+
+</g>
+    <g
+       id="g557">
+  <g
+   id="g555">
+    <path
+   id="path553"
+   d="m 183.297,228.463 c -1.599,-6.358 -5.127,-12.065 -10.1,-16.337 13.298,-11.424 14.817,-31.466 3.393,-44.764 -4.272,-4.973 -9.979,-8.501 -16.337,-10.1 v -17.136 h -16 v 16 h -16 v -16 h -16 v 16 h -16 v 16 h 8 v 80 h -8 v 16 h 16 v 16 h 16 v -16 h 16 v 16 h 16 V 266.99 c 17.002,-4.275 27.319,-21.525 23.044,-38.527 z m -31.044,23.663 h -32 v -32 h 32 c 8.837,0 16,7.163 16,16 0,8.837 -7.164,16 -16,16 z m 0,-48 h -32 v -32 h 32 c 8.837,0 16,7.163 16,16 0,8.837 -7.164,16 -16,16 z"
+   inkscape:connector-curvature="0" />
+
+  </g>
+
+</g>
+  </g>
+
 </svg>

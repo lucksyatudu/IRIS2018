@@ -1,30 +1,107 @@
 <svg version="1.1" width="100%" height="850px" viewBox="0 0 501 850">
-<style type="text/css">
-<![CDATA[
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:4;
-	stroke-linecap: round; 
-	stroke-linejoin: miter; 
-	stroke-opacity: 1; 
-	stroke-dasharray: 6000; stroke-dashoffset: 6000;}
-]]>
-</style>
-<circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="25" r="4.156"/>
-<!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="172.375" cy="25.375" r="9.156"/>-->
-<line class="st1" data--50-bottom="stroke-dashoffset:6000;" data-center-top="stroke-dashoffset:0;" x1="-180" y1="25" x2="-180" y2="150"/>
-<circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="150" r="4.156"/>
-<line class="st1" data-0="stroke-dashoffset:16000;" data--50-bottom="stroke-dashoffset:0;" x1="-180" y1="150" x2="750" y2="800"/>
-<circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="750" cy="800" r="4.156"/>
-<!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="750" cy="800" r="9.156"/> -->
-<!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="116" y1="267.5" x2="161" y2="267.5"/>
-<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="182" y1="267.5" x2="474" y2="267.5"/>-->
-<rect
-   style="fill:url(#radialGradient3773);fill-opacity:1;stroke-width:2.56225777"
-   id="rect3759"
-   width="1234.3402"
-   height="436.10385"
-   x="-105.85511"
-   y="-135.68159"
-   ry="0"
-   transform="matrix(0.81696259,0.57669067,-0.92242988,0.38616463,0,0)"
-   data-0="opacity:0" data--800-bottom="opacity:0.8" />
+   <style type="text/css">
+      <![CDATA[
+      .st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:4;
+      stroke-linecap: round; 
+      stroke-linejoin: miter; 
+      stroke-opacity: 1; 
+      stroke-dasharray: 6000; stroke-dashoffset: 6000;}
+      ]]>
+   </style>
+   <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="25" r="4.156"/>
+   <!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="172.375" cy="25.375" r="9.156"/>-->
+   <line class="st1" data--50-bottom="stroke-dashoffset:6000;" data-center-top="stroke-dashoffset:0;" x1="-180" y1="25" x2="-180" y2="150"/>
+   <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="150" r="4.156"/>
+   <line class="st1" data-0="stroke-dashoffset:16000;" data--50-bottom="stroke-dashoffset:0;" x1="-180" y1="150" x2="470" y2="604"/>
+   <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="470" cy="604" r="4.156"/>
+   <!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="750" cy="800" r="9.156"/> -->
+   <!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="116" y1="267.5" x2="161" y2="267.5"/>
+   <line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="182" y1="267.5" x2="474" y2="267.5"/>-->
+   <rect
+      style="fill:url(#radialGradient3773);fill-opacity:1;stroke-width:2.56225777"
+      id="rect3759"
+      width="1234.3402"
+      height="436.10385"
+      x="-105.85511"
+      y="-135.68159"
+      ry="0"
+      transform="matrix(0.81696259,0.57669067,-0.92242988,0.38616463,0,0)"
+      data-0="opacity:0" data--800-bottom="opacity:0.8" />
+
+      <g
+       id="g124"
+       transform="matrix(0.68407475,0,0,0.68407475,397.35821,500.43657)" class="st2"
+       data-bottom-top="fill-opacity:0;" data-bottom-bottom="fill-opacity:0.8;">
+       <g
+        id="g58">
+        <g
+         id="g56">
+         <path
+            id="path54"
+            d="M 435.377,191.63 C 404.66,167.897 370.172,147.335 333.185,134.59 L 355.304,90 h 43.573 c 2.588,4.589 5.772,8.884 9.538,12.765 C 419.823,114.524 434.947,121 451,121 484.065,121 512,93.065 512,60 512,43.947 505.523,28.823 493.765,17.415 482.19,6.185 467.003,0 451,0 417.916,0 391,26.916 391,60 h -54.304 l -32.891,66.309 C 287.661,122.788 271.69,121 256,121 190.23,121 128.06,151.888 76.623,191.63 32.046,226.072 8.699,260.171 7.546,261.606 L 0,271 l 7.546,9.394 c 1.153,1.435 24.5,35.534 69.077,69.976 29.808,23.031 63.293,43.133 98.903,55.902 L 156.079,452 H 121 V 422 H 0 v 90 h 121 v -30 h 54.921 L 204.48,414.846 C 221.888,418.925 239.107,421 256,421 321.77,421 383.94,390.112 435.377,350.37 470.618,323.141 490.756,297.303 512,271 491.422,245.521 471.375,219.444 435.377,191.63 Z M 451,30 c 16.804,0 31,13.738 31,30 0,16.514 -14.486,31 -31,31 -16.262,0 -30,-14.196 -30,-31 0,-16.542 13.458,-30 30,-30 z M 91,482 H 30 V 452 H 91 Z M 187.319,378.541 C 151.098,365.796 119.244,345.328 95.517,327.057 67.153,305.214 50.025,283.116 39.089,271.006 66.015,241.238 151.99,151 256,151 c 11.536,0 22.892,1.144 33.987,3.167 l -14.38,28.991 C 269.292,181.749 262.732,181 256,181 c -49.626,0 -90,40.374 -90,90 0,29.535 14.302,55.792 36.343,72.212 z M 196,271 c 0,-33.084 26.916,-60 60,-60 33.084,0 60,26.916 60,60 0,33.084 -26.916,60 -60,60 -33.084,0 -60,-26.916 -60,-60 z m 60,120 c -13.479,0 -26.711,-1.557 -39.566,-4.263 L 229.122,356.9 c 8.491,2.663 17.52,4.1 26.878,4.1 49.626,0 90,-40.374 90,-90 0,-32.227 -17.03,-60.546 -42.559,-76.447 l 16.263,-32.787 c 38.279,12.569 71.971,34.074 96.778,53.178 28.364,21.843 45.49,43.939 56.428,56.051 C 445.985,300.762 360.01,391 256,391 Z"
+            inkscape:connector-curvature="0" />
+
+         </g>
+
+      </g>
+      <g
+        id="g64">
+        <g
+         id="g62">
+         <rect
+            id="rect60"
+            height="30"
+            width="30"
+            y="256"
+            x="241" />
+
+         </g>
+
+      </g>
+      <g
+        id="g66">
+     </g>
+     <g
+        id="g68">
+     </g>
+     <g
+        id="g70">
+     </g>
+     <g
+        id="g72">
+     </g>
+     <g
+        id="g74">
+     </g>
+     <g
+        id="g76">
+     </g>
+     <g
+        id="g78">
+     </g>
+     <g
+        id="g80">
+     </g>
+     <g
+        id="g82">
+     </g>
+     <g
+        id="g84">
+     </g>
+     <g
+        id="g86">
+     </g>
+     <g
+        id="g88">
+     </g>
+     <g
+        id="g90">
+     </g>
+     <g
+        id="g92">
+     </g>
+     <g
+        id="g94">
+     </g>
+  </g>
 </svg>
