@@ -34,6 +34,7 @@
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
 		<script src="lib/angular.min.js"></script>
 		<script src="lib/angular-route.min.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.4/angular-sanitize.min.js"></script>-->
 		<script src="lib/anime.min.js"></script>
 
 		<!-- JavaScript Scripts -->

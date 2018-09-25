@@ -11,18 +11,17 @@
 			</div>
 			
 			<div class="row fill_parent pt-1" style="margin-top: 3em;">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_body_centered">
-					{{eventDetails.about}}
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_body_centered" ng-bind-html="eventDetails.about">
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_body" style="margin-top: 2em;" ng-show="eventDetails.format">
 					<div class="row">Format: <br></div>
-					<div class="row">{{eventDetails.format}}</div>
+					<div ng-bind-html="eventDetails.format"></div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_body" style="margin-top: 2em;"  ng-show="eventDetails.rules">
 					<div class="row">Rules: <br></div>
-					<div class="row">{{eventDetails.rules}}</div>
+					<div ng-bind-html="eventDetails.rules"></div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text_body"  style="margin-top: 2em;">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text_body"  style="margin-top: 2em;" ng-show="eventDetails.namePOC1">
 					<div class="row">POC Details:</div>
 					<div class="row mt-1 pt-1">
 						{{eventDetails.namePOC1}}<br>

@@ -11,10 +11,10 @@
 			<div ng-repeat="event in flagshipEvents">
 				<hr>
 				<div class="row eventListElement">
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails('ashwamedha')">
-						<img ng-src="{{event.logo}}" width="75" class="eventLogo">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
+						<img ng-src="{{event.logo}}" width="75" class="eventLogo" onError="this.src = 'img/events/logo-def.svg'">
 					</div>
-					<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10" ng-click="viewEventDetails('ashwamedha')">
+					<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10" ng-click="viewEventDetails(event)">
 						<div class="row eventHead">{{event.name}}</div>
 						<div class="row text_body">{{event.tagline}}</div>
 					</div>

@@ -1,7 +1,10 @@
 var IrisApp=angular.module('IrisApp',[]);
 
 IrisApp.controller('irisController',irisController);
-function irisController($scope, $http){
+function irisController($scope, $http, $sce){
+
+	//constants
+	const DEFAULT_EVENT_LOGO = "img/events/logo-def.svg";
 
 	//init
 	$scope.sponsors;
@@ -27,7 +30,7 @@ function irisController($scope, $http){
 		$http.get("php/getFlagshipEvents.php")
    			.then(function (response) {
    				$scope.flagshipEvents = response.data;
-   				console.log($scope.flagshipEvents);
+   				transformToHTML($scope.flagshipEvents);
    			});
 	}
 
@@ -35,6 +38,7 @@ function irisController($scope, $http){
 		$http.get("php/getCulturalEvents.php")
    			.then(function (response) {
    				$scope.culturalEvents = response.data;
+   				transformToHTML($scope.culturalEvents);
    			});
 	}
 
@@ -42,17 +46,25 @@ function irisController($scope, $http){
 		$http.get("php/getManagmentEvents.php")
    			.then(function (response) {
    				$scope.managmentEvents = response.data;
+   				transformToHTML($scope.managmentEvents);
    			});
 	}
 
 	var getSports=function(){
-		/*
-		$http.get("php/getSponsors.php")
+		$http.get("php/getSports.php")
    			.then(function (response) {
    				$scope.sports = response.data;
+   				transformToHTML($scope.sports);
    			});
-   		*/
 	}	
+
+	var transformToHTML=function(array){
+		for(var i=0;i<array.length;i++){
+			array[i].about=$sce.trustAsHtml(array[i].about);
+   			array[i].format=$sce.trustAsHtml(array[i].format);
+   			array[i].rules=$sce.trustAsHtml(array[i].rules);
+   		}
+	}
 
 	var init=function(){
 		getSponsors();
