@@ -1,4 +1,4 @@
-<svg version="1.1" width="100%" height="300px" viewBox="0 0 501 300">
+<svg id="line10" version="1.1" width="100%" height="300px" viewBox="0 0 501 300">
 <style type="text/css">
 <![CDATA[
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:4;
@@ -8,12 +8,8 @@
 	stroke-dasharray: 2000; stroke-dashoffset: 2000;}
 ]]>
 </style>
-<!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="23" y1="25.5" x2="162" y2="25.5"/>
-<path class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" d="M322,25.5H183"/>-->
 <circle class="st0" data--175-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="-180" cy="267.375" r="9.156"/>
 <circle class="st0" style="fill: #fff" data--135-bottom="opacity:0" data-center-top="opacity:0.8;" cx="-180" cy="25" r="4.156"/>
 <line class="st0" data--50-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" x1="-180" y1="25" x2="-180" y2="262"/>
-<!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="116" y1="267.5" x2="161" y2="267.5"/>
-<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="182" y1="267.5" x2="474" y2="267.5"/>-->
 <circle class="st0" style="fill: #fff" data--10-bottom="opacity:0" data--50-bottom="opacity:1" cx="-180" cy="267.375" r="4.156"/>
 </svg>

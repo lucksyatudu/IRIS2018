@@ -48,10 +48,16 @@ function removeLoader() {
     $('#menuSm').delay(400).fadeIn(500);
   }
 
-  setTimeout(function () {
-    skrollr.get().refresh();
-    //console.log("refreshed");
-  }, 500);
+  var s = skrollr.init({
+      smoothScrolling: true,
+          smoothScrollingDuration: 500
+    });
+
+    setTimeout(function () {
+      //skrollrRefresh();
+      skrollr.get().refresh();
+      //console.log("refreshed");
+    }, 2500);
 }
 
 //Menu related functions for small screen devices

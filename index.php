@@ -34,8 +34,8 @@
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
 		<script src="lib/angular.min.js"></script>
 		<script src="lib/angular-route.min.js"></script>
-		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.4/angular-sanitize.min.js"></script>-->
 		<script src="lib/anime.min.js"></script>
+		<!--<script src="lib/gpu.js"></script>-->
 
 		<!-- JavaScript Scripts -->
 		<script type="text/javascript" src="js/main.js"></script>
@@ -344,7 +344,11 @@
 	</body>
 
 	<script>
-		var s = skrollr.init();
+	/*
+		var s = skrollr.init({
+			smoothScrolling: true,
+        	smoothScrollingDuration: 500
+		});*/
 	</script>
 
 </html>

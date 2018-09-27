@@ -1,4 +1,4 @@
-<svg version="1.1" width="100%" height="850px" viewBox="0 0 501 850">
+<svg id="line8" version="1.1" width="100%" height="850px" viewBox="0 0 501 850">
 <style type="text/css">
 <![CDATA[
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:4;
@@ -9,14 +9,10 @@
 ]]>
 </style>
 <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="25" r="4.156"/>
-<!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="172.375" cy="25.375" r="9.156"/>-->
-<line class="st1" data--50-bottom="stroke-dashoffset:6000;" data-center-top="stroke-dashoffset:0;" x1="-180" y1="25" x2="-180" y2="150"/>
+<line class="st1" data--50-bottom="stroke-dashoffset:6000;" data-center-top="stroke-dashoffset:5880;" x1="-180" y1="25" x2="-180" y2="150"/>
 <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="-180" cy="150" r="4.156"/>
-<line class="st1" data-0="stroke-dashoffset:16000;" data--50-bottom="stroke-dashoffset:0;" x1="-180" y1="150" x2="440" y2="580"/>
+<line class="st1" data-center-top="stroke-dashoffset:6000;" data--50-bottom="stroke-dashoffset:5200;" x1="-180" y1="150" x2="440" y2="580"/>
 <circle class="st1" style="fill: #fff" data--50-bottom="opacity:0" data-center-top="opacity:1" cx="440" cy="580" r="4.156"/>
-<!--<circle class="st0" data--150-bottom="stroke-dashoffset:2000;" data-center-top="stroke-dashoffset:0;" cx="750" cy="800" r="9.156"/> -->
-<!--<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="116" y1="267.5" x2="161" y2="267.5"/>
-<line class="st0" data-0="stroke-dashoffset:6000;" data--10-bottom="stroke-dashoffset:0;" x1="182" y1="267.5" x2="474" y2="267.5"/>-->
 <rect
    style="fill:url(#radialGradient3773);fill-opacity:1;stroke-width:2.56225777"
    id="rect3759"

@@ -90,7 +90,7 @@ function irisController($scope, $http, $sce){
 
 	$scope.close=function(name){
 		//console.log("a");
-		$('#'+name).delay(400).fadeOut(500).addClass("animated zoomOut");
-		$('#'+name).delay(400).fadeOut(500).removeClass("animated zoomOut");
+		$('#'+name).fadeOut(500).addClass("animated zoomOut");
+		$('#'+name).fadeOut(500).removeClass("animated zoomOut");
 	}
 }
