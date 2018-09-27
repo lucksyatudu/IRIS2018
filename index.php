@@ -56,7 +56,7 @@
 					  		<div id="particles-js" class="content">
 					  			<div id="section_loader">
 						  			<div class="logo">
-										<img src="img/logo-svg.svg" width="75" id="prism-logo">
+										<img src="img/logo-svg.svg" width="100" id="prism-logo">
 									</div>
 						    		<div class="loader-circle"></div>
 						    		<div class="loader-line-mask">
