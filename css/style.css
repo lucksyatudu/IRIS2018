@@ -76,7 +76,7 @@
   }
   .eventContainer{
     max-height: 500px;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden; 
   }
   .eventContainer hr { 
@@ -114,6 +114,30 @@
     font-size: 16px;
     margin-top: 30px;
     cursor: pointer;
+  }
+  .eventViewButton.ng-hide-add,
+  .eventViewButton.ng-hide-remove {
+    -webkit-transition : 0.5s ease-in-out opacity;
+    -moz-transition    : 0.5s ease-in-out opacity;
+    -ms-transition     : 0.5s ease-in-out opacity;
+    -o-transition      : 0.5s ease-in-out opacity;
+    transition         : 0.5s ease-in-out opacity;
+    opacity            : 1;
+  }
+  .eventViewButton.ng-hide {
+    opacity : 0;
+  }
+  .eventRegisterButton.ng-hide-add,
+  .eventRegisterButton.ng-hide-remove {
+    -webkit-transition : 0.5s ease-in-out opacity;
+    -moz-transition    : 0.5s ease-in-out opacity;
+    -ms-transition     : 0.5s ease-in-out opacity;
+    -o-transition      : 0.5s ease-in-out opacity;
+    transition         : 0.5s ease-in-out opacity;
+    opacity            : 1;
+  }
+  .eventRegisterButton.ng-hide {
+    opacity : 0;
   }
   .eventImg{
     max-width: 100%;

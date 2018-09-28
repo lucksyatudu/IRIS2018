@@ -35,6 +35,7 @@
 		<script src="lib/angular.min.js"></script>
 		<script src="lib/angular-route.min.js"></script>
 		<script src="lib/anime.min.js"></script>
+		<script src="lib/angular-animate.min.js"></script>
 		<!--<script src="lib/gpu.js"></script>-->
 
 		<!-- JavaScript Scripts -->
@@ -56,7 +57,7 @@
 					  		<div id="particles-js" class="content">
 					  			<div id="section_loader">
 						  			<div class="logo">
-										<img src="img/logo-svg.svg" width="100" id="prism-logo">
+										<img src="img/logo-svg.svg" width="75" id="prism-logo">
 									</div>
 						    		<div class="loader-circle"></div>
 						    		<div class="loader-line-mask">
@@ -126,7 +127,9 @@
 					    					<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 p-0 float-right">
 					    						<div style="border-radius: 10px;float: right; height: 100%; width: 100%">
 					    							<iframe  frameborder="0" allowfullscreen style="width: 100%;height: 100%;padding:10px" 
-					    							src="https://www.youtube.com/embed/ktCjY0OMn6s"></iframe>
+					    							src="https://www.youtube.com/embed/jKLJktTDK3U"></iframe>
+					    							<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/ktCjY0OMn6s" 
+					    							frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 					    						</div>
 					    					</div>
 					    				</div>

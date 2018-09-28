@@ -10,7 +10,7 @@
 		<div class="container eventContainer">
 			<div ng-repeat="event in flagshipEvents">
 				<hr>
-				<div class="row eventListElement">
+				<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 						<img ng-src="{{event.logo}}" width="75" class="eventLogo" onError="this.src = 'img/events/logo-def.svg'">
 					</div>
@@ -21,8 +21,8 @@
 					<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 float-right">
 						<div class="row">
 							<ul>
-								<li><button class="eventViewButton" ng-click="viewEventDetails(event)">View</button></li>
-								<li><button class="eventRegisterButton" ng-click="register('ashwamedha')">Register</button></li>
+								<li><button class="eventViewButton" ng-show="focusOver==event.name" ng-click="viewEventDetails(event)">View</button></li>
+								<li><button class="eventRegisterButton" ng-show="focusOver==event.name" ng-click="register('ashwamedha')">Register</button></li>
 							</ul>
 						</div>
 					</div>
@@ -43,7 +43,7 @@
 		<div class="container eventContainer">
 			<div ng-repeat="event in managmentEvents">
 				<hr>
-				<div class="row eventListElement">
+				<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 						<img ng-src="{{event.logo}}" width="75" class="eventLogo">
 					</div>
@@ -54,8 +54,8 @@
 					<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 float-right">
 						<div class="row">
 							<ul>
-								<li><button class="eventViewButton" ng-click="viewEventDetails(event)">View</button></li>
-								<li><button class="eventRegisterButton" ng-click="register('ashwamedha')">Register</button></li>
+								<li><button class="eventViewButton" ng-show="focusOver==event.name" ng-click="viewEventDetails(event)">View</button></li>
+								<li><button class="eventRegisterButton" ng-show="focusOver==event.name" ng-click="register('ashwamedha')">Register</button></li>
 							</ul>
 						</div>
 					</div>
@@ -76,7 +76,7 @@
 		<div class="container eventContainer">
 			<div ng-repeat="event in culturalEvents">
 				<hr>
-				<div class="row eventListElement">
+				<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 						<img ng-src="{{event.logo}}" width="75" class="eventLogo">
 					</div>
@@ -87,8 +87,8 @@
 					<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 float-right">
 						<div class="row">
 							<ul>
-								<li><button class="eventViewButton" ng-click="viewEventDetails(event)">View</button></li>
-								<li><button class="eventRegisterButton" ng-click="register('ashwamedha')">Register</button></li>
+								<li><button class="eventViewButton" ng-show="focusOver==event.name" ng-click="viewEventDetails(event)">View</button></li>
+								<li><button class="eventRegisterButton" ng-show="focusOver==event.name" ng-click="register('ashwamedha')">Register</button></li>
 							</ul>
 						</div>
 					</div>

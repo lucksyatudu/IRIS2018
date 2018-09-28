@@ -1,4 +1,4 @@
-var IrisApp=angular.module('IrisApp',[]);
+var IrisApp=angular.module('IrisApp',['ngAnimate']);
 
 IrisApp.controller('irisController',irisController);
 function irisController($scope, $http, $sce){
@@ -76,6 +76,8 @@ function irisController($scope, $http, $sce){
 	}
 
 	init();
+
+	$scope.focusOver="";
 
 	$scope.viewEventDetails=function(object){
 		//console.log(name);
