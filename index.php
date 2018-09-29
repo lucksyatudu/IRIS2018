@@ -196,6 +196,12 @@
 					    			<?php
 					    				include "pages/about.html";
 					    			?>
+								
+								<div style="border-radius: 10px;float: right; height: 100%; width: 100%">
+					    							<iframe  frameborder="0" allowfullscreen style="width: 100%;height: 100%;padding:10px" 
+					    							src="https://www.youtube.com/embed/ktCjY0OMn6s"></iframe>
+					    			</div>
+								
 									<!-- About IRIS -->
 
 									<!-- Clear Space -->
