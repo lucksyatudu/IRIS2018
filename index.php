@@ -128,8 +128,6 @@
 					    						<div style="border-radius: 10px;float: right; height: 100%; width: 100%">
 					    							<iframe  frameborder="0" allowfullscreen style="width: 100%;height: 100%;padding:10px" 
 					    							src="https://www.youtube.com/embed/jKLJktTDK3U"></iframe>
-					    							<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/ktCjY0OMn6s" 
-					    							frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 					    						</div>
 					    					</div>
 					    				</div>
@@ -175,7 +173,7 @@
 						    					<div class="clearfix"></div>
 						    				</div>
 						    				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						    					<div class="row headingChild">16
+						    					<div class="row headingChild float-right">16
 						    						<sup style="margin-top: 20px;">Th</sup> - 18
 						    						<sup style="margin-top: 20px;">Th</sup> Nov'18
 						    					</div>

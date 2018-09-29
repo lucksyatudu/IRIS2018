@@ -31,6 +31,7 @@ function irisController($scope, $http, $sce){
    			.then(function (response) {
    				$scope.flagshipEvents = response.data;
    				transformToHTML($scope.flagshipEvents);
+   				getBackgrounds($scope.flagshipEvents);
    			});
 	}
 
@@ -39,6 +40,7 @@ function irisController($scope, $http, $sce){
    			.then(function (response) {
    				$scope.culturalEvents = response.data;
    				transformToHTML($scope.culturalEvents);
+   				getBackgrounds($scope.culturalEvents);
    			});
 	}
 
@@ -48,6 +50,7 @@ function irisController($scope, $http, $sce){
    				console.log(response);
    				$scope.managmentEvents = response.data;
    				transformToHTML($scope.managmentEvents);
+   				getBackgrounds($scope.managmentEvents);
    			});
 	}
 
@@ -56,6 +59,7 @@ function irisController($scope, $http, $sce){
    			.then(function (response) {
    				$scope.sports = response.data;
    				transformToHTML($scope.sports);
+   				getBackgrounds($scope.sports);
    			});
 	}	
 
@@ -64,6 +68,12 @@ function irisController($scope, $http, $sce){
 			array[i].about=$sce.trustAsHtml(array[i].about);
    			array[i].format=$sce.trustAsHtml(array[i].format);
    			array[i].rules=$sce.trustAsHtml(array[i].rules);
+   		}
+	}
+
+	var getBackgrounds=function(array){
+		for(var i=0;i<array.length;i++){
+			array[i].bg=array[i].background.split(',');
    		}
 	}
 
@@ -82,7 +92,7 @@ function irisController($scope, $http, $sce){
 	$scope.viewEventDetails=function(object){
 		//console.log(name);
 		$scope.eventDetails=object;
-		$('#eventDetails').delay(400).fadeIn(500).addClass("animated fadeIn");
+		$('#eventDetails').addClass("animated fadeIn");
 		$('#eventDetails').delay(400).fadeIn(500).removeClass("animated fadeIn");
 	}
 

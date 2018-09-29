@@ -24,7 +24,8 @@
 	 	"smURL"=>$row['social_media'],
 	 	"regURL"=>$row['register_url'],
 	 	"regStart"=>$row['register_start'],
-	 	"regEnd"=>$row['register_end']
+	 	"regEnd"=>$row['register_end'],
+	 	"background"=>$row['background']
 	 	);
 	}
 	$result_json = json_encode($data);

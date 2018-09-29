@@ -25,7 +25,8 @@
 	 	"regURL"=>$row['register_url'],
 	 	"regStart"=>$row['register_start'],
 	 	"regEnd"=>$row['register_end'],
-	 	"type"=>$row['type']
+	 	"type"=>$row['type'],
+	 	"background"=>$row['background']
 	 	);
 	}
 	$result_json = json_encode($data);
