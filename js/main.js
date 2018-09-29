@@ -74,6 +74,6 @@ $(window).bind("scroll", function() {
   if ($(this).scrollTop() > 280) {
         $(".navbar").css({'background-color':'rgba(51,51,51,0.8)'});
     } else {
-        $(".navbar").css({'background-color':'rgba(51,51,51,0.8)'});
+        $(".navbar").css({'background-color':'rgba(51,51,51,0)'});
     }
 });
