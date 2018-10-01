@@ -53,6 +53,7 @@
     margin-top: 50px;
     margin-left: 50px;
     height: 100%;
+    font-family: 'Megrim', cursive;
   }
   .heading{
     color: #ffffff;
@@ -310,7 +311,7 @@
     	width: 100%;
     	margin-top: -12px;
       padding: .1rem 1rem;
-      font-family: monospace;
+      font-family: 'Megrim', cursive;
   }
 
   .navbar a {
@@ -359,7 +360,7 @@
     top: 15%;
     width: 100%;
     text-align: center;
-    font-family: monospace;
+    font-family: 'Megrim', cursive;
     margin-top: 30px;
 }
 

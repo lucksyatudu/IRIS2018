@@ -29,6 +29,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
 
 		<!-- JavaScript Libraries -->
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
@@ -127,7 +129,7 @@
 					    					<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12 p-0 float-right">
 					    						<div style="border-radius: 10px;float: right; height: 100%; width: 100%">
 					    							<iframe  frameborder="0" allowfullscreen style="width: 100%;height: 100%;padding:10px" 
-					    							src="https://www.youtube.com/embed/jKLJktTDK3U"></iframe>
+					    							src="https://www.youtube.com/embed/jKLJktTDK3U?rel=0&autoplay=1"></iframe>
 					    						</div>
 					    					</div>
 					    				</div>
@@ -152,7 +154,7 @@
 						    			?>
 						    			</div>
 						    			<script type="text/javascript">
-						    			
+						    			/*
 						    				var lineDrawing = anime({
 											  	targets: '#blockDates .lines path',
 											  	strokeDashoffset: [anime.setDashoffset, 0],
@@ -161,7 +163,7 @@
 											  	delay: function(el, i) { return i * 50 },
 											  	direction: 'alternate',
 											  	loop: true
-											});
+											});*/
 						    			</script>
 						    		</div>
 					    			
