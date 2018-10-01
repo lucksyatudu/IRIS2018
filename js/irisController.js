@@ -47,7 +47,7 @@ function irisController($scope, $http, $sce){
 	var getManagmentEvents=function(){
 		$http.get("php/getManagmentEvents.php")
    			.then(function (response) {
-   				console.log(response);
+   				//console.log(response);
    				$scope.managmentEvents = response.data;
    				transformToHTML($scope.managmentEvents);
    				getBackgrounds($scope.managmentEvents);

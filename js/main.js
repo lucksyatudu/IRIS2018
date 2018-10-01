@@ -7,6 +7,10 @@ $(document).ready(function () {
     $('.loader-line-mask').delay(400).fadeOut(500);
     $('.loader-line').delay(400).fadeOut(500);
     $('#continue').delay(400).fadeIn(500).addClass("animated fadeInDown");
+    $('#landing_text').delay(1000).fadeIn(1000).addClass("animated fadeIn");
+    $('.logo').delay(400).animate({
+      top: '30%'
+    }),2000;
     //$('.particles-js-canvas-el').css({'z-index':'0'});
   })
 

@@ -31,6 +31,7 @@
 
 		<!-- Font -->
 		<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+		<link rel="stylesheet" href="css/font.css">	
 
 		<!-- JavaScript Libraries -->
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
@@ -38,6 +39,7 @@
 		<script src="lib/angular-route.min.js"></script>
 		<script src="lib/anime.min.js"></script>
 		<script src="lib/angular-animate.min.js"></script>
+		<script src="lib/jquery.visible.min.js"></script>
 		<!--<script src="lib/gpu.js"></script>-->
 
 		<!-- JavaScript Scripts -->
@@ -45,6 +47,7 @@
 		<script type="text/javascript" src="js/irisController.js"></script>
 		<script type="text/javascript" src="js/animationDesktop.js"></script>
 		<script type="text/javascript" src="js/canvas.js"></script>
+		<script type="text/javascript" src="js/countdown.js"></script>
 
 	</head>
 
@@ -66,9 +69,16 @@
 						      			<div class="loader-line"></div>  
 						    		</div>
 
+						    		<!-- Text -->
+						    		<div id="landing_text">
+						    			IIM Indore's Annual <br>
+						    			Cultural, Managment and Sports Festival
+						    		</div>
+						    		<!-- Text -->
+
 						    		<!-- Continue -->
 						    		<div id="continue">
-						    			<button class="enter_btn" onclick="removeLoader()">Continue</button>
+						    			<button class="enter_btn" onclick="removeLoader()">Launch Now</button>
 						    		</div>
 						    		<!-- Continue -->
 					    		</div>
@@ -80,10 +90,12 @@
 				</div>
 			</section>
 			<!-- Loader -->
+
 			<!--
 			<?php
 		    	include "pages/canvas/background-layers.html";
 		    ?> -->
+
 			<!-- Contents -->
 			<section>
 				<div id="content_body">
@@ -147,12 +159,8 @@
 					    				?>
 					    			</div>
 
+					    			<!-- Dates -->
 					    			<div class="container">
-						    			<div id="blockDates">
-						    				<?php
-						    				include "img/date-title.svg";
-						    			?>
-						    			</div>
 						    			<script type="text/javascript">
 						    			/*
 						    				var lineDrawing = anime({
@@ -165,14 +173,16 @@
 											  	loop: true
 											});*/
 						    			</script>
+						    			<!--
 						    		</div>
-					    			
-
-					    			<!-- Dates -->
-					    			<div class="container">
+					    			<div class="container">-->
 					    				<div class="row">
 						    				<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0 hidden-md-down">
-						    					<div class="clearfix"></div>
+						    					<div id="blockDates">
+						    						<?php
+						    						include "img/date-title.svg";
+						    						?>
+						    					</div>
 						    				</div>
 						    				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						    					<div class="row headingChild float-right">16
@@ -180,6 +190,27 @@
 						    						<sup style="margin-top: 20px;">Th</sup> Nov'18
 						    					</div>
 						    				</div>
+					    				</div>
+					    				<br>
+					    				<div class="row">
+					    					<div class="col-md-2 clearfix"></div>
+					    					<div class="col-md-2">
+					    						<div class="row cd_head">Days</div>
+					    						<div id="cd_days" class="countdown"></div>
+					    					</div>
+					    					<div class="col-md-2">
+					    						<div class="row cd_head">Hours</div>
+					    						<div id="cd_hrs" class="col-md-3 countdown"></div>
+					    					</div>
+					    					<div class="col-md-2">
+					    						<div class="row cd_head">Minutes</div>
+					    						<div id="cd_mins" class="col-md-3 countdown"></div>
+					    					</div>
+					    					<div class="col-md-2">
+					    						<div class="row cd_head">Seconds</div>
+					    						<div id="cd_sec" class="col-md-3 countdown"></div>
+					    					</div>
+					    						<div class="col-md-2 clearfix"></div>
 					    				</div>
 					    				<hr class="section-seperator-right" data--10-bottom="width:0%" data-center-top="width:50%">
 					    			</div>

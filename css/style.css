@@ -1,8 +1,22 @@
+#landing_text{
+  display:none;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-family: 'Megrim', cursive;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-left: -235px;
+}
+
 #continue{
 	display:none;
 	position: absolute;
   left: 50%;
   top: 80%;
+  font-family: 'Arciform';
+  font-size: large;
 }
 
 .enter_btn {
@@ -12,8 +26,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin-left: -43px;
+  margin-left: -54px;
   cursor: pointer;
 }
 
@@ -48,6 +61,10 @@
     float: right;
   }
 
+  .elements{
+    max-width:100%;
+  }
+
   /* Heading */
   .headings{
     margin-top: 50px;
@@ -65,7 +82,58 @@
   }
   /* Heading */
 
+  /* Date and Countdown */
+  .cd_head{
+    color: #ffffff;
+    font-size: 1vw;
+    font-family: 'Megrim', cursive;
+  }
+  .countdown{
+    color: #ffffff;
+    font-size: 8vw;
+    margin-top: -3vw;
+    font-family: 'Arciform';
+  }
+  /* Date and Countdown */
+
+  /* About IRIS */
+  #aboutIRIS{
+    background-image:url('../img/bg/bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* About IRIS */
+
+  /* Pronites */
+  #pronites{
+    background-image:url('../img/bg/bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* Pronites */
+
+  /* Envision */
+  #envision{
+    background-image:url('../img/bg/bg3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* Envision */
+
   /* Events */
+  #events{
+    background-image:url('../img/bg/bg4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .eventHead{
     font-size: 30px;
     color: #fff;
@@ -180,7 +248,24 @@
   }
   /* Events Details */
 
+  /* Sports */
+  #sports{
+    background-image:url('../img/bg/bg5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* Sports */
+
   /* Sponsors */
+  #sponsors{
+    background-image:url('../img/bg/bg6.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
   .sponsorItem{
     width: 20%;
   }
