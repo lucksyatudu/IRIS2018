@@ -13,15 +13,15 @@
 			
 			<div class="row fill_parent pt-1" style="margin-top: 3em;">
 				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-1">
-					<div class="row p-1 ml-1" ng-show="eventDetails.about" ng-click="changeEventDetailContent('about')">About</div>
-					<div class="row p-1 ml-1" ng-show="eventDetails.format" ng-click="changeEventDetailContent('format')">Format</div>
-					<div class="row p-1 ml-1" ng-show="eventDetails.rules" ng-click="changeEventDetailContent('rules')">Rules</div>
-					<div class="row p-1 ml-1" ng-show="eventDetails.namePOC1" ng-click="changeEventDetailContent('contact')">Contact</div>
+					<div id="eventAbout" class="row p-1 ml-1 eventNav" ng-show="eventDetails.about" ng-click="changeEventDetailContent('about')">About</div>
+					<div id="eventFormat"  class="row p-1 ml-1 eventNav" ng-show="eventDetails.format" ng-click="changeEventDetailContent('format')">Format</div>
+					<div id="eventRules"  class="row p-1 ml-1 eventNav" ng-show="eventDetails.rules" ng-click="changeEventDetailContent('rules')">Rules</div>
+					<div id="eventContacts"  class="row p-1 ml-1 eventNav" ng-show="eventDetails.namePOC1" ng-click="changeEventDetailContent('contact')">Contact</div>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-10 col-xs-11">
 					<div id="detailsBox">
 						<div  ng-bind-html="displayText"></div>
-						<div id="eventContacts" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text_body"  style="margin-top: 2em;">
+						<div id="eventContactsSection" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text_body">
 							<div class="row">POC Details:</div>
 							<div class="row mt-1 pt-1">
 								{{eventDetails.namePOC1}}<br>

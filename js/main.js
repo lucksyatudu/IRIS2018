@@ -14,27 +14,39 @@ $(document).ready(function () {
     //$('.particles-js-canvas-el').css({'z-index':'0'});
   })
 
+  var message=["IIM Indore's Annual <br> Cultural, Managment and Sports Festival","16 - 18 Nov'18"];
+  var flag=false;
+  function fader() {
+    $("#landing_text p").fadeOut(1800, function() {
+      flag=!flag;
+      if(flag){
+        $('#landing_text').css({'margin-left':'-235px'});
+        $(this).html(message[0]).delay(300).fadeIn(1500);
+      }else{
+        $('#landing_text').css({'margin-left':'-70px'});
+        $(this).html(message[1]).delay(300).fadeIn(1500);
+      }
+    });
+  }
+  fader();                    // run once now
+  setInterval(fader, 3600);
+
   //Smooth Scrolling
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+      if(hash!='#register'){
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      }
+    }
   });
   
   //jQuery.scrollspeed(100,800); 
@@ -81,3 +93,63 @@ $(window).bind("scroll", function() {
         $(".navbar").css({'background-color':'rgba(51,51,51,0)'});
     }
 });
+
+var keydowns=0;
+var tags=["#headings","#line1","#aboutIRIS","#pronites","#envision","#events","#sports","#sponsors","#register","#contactUs"];
+
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        break;
+
+        case 38: // up
+        if(keydowns>0){
+          keydowns--;
+          var hash = tags[keydowns];
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 2500, function(){
+            window.location.hash = hash;
+          });
+        }          
+        break;
+
+        case 39: // right
+        break;
+
+        case 40: // down
+        if(keydowns<9){
+          keydowns++;
+          var hash = tags[keydowns];
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 2500, function(){
+            window.location.hash = hash;
+          });
+        }
+          //console.log("down")
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
+/* Register Panel */
+function openRegNav() {
+    document.getElementById("regPanel").style.width = "25%";
+    document.getElementById("regPanel").style.left = "75%";
+}
+
+function closeRegNav() {
+    document.getElementById("regPanel").style.width = "0";
+    document.getElementById("regPanel").style.left = "0";
+}
+
+function scrollToTop(){
+  $('html, body').animate({
+      scrollTop: 0
+    }, 500, function(){
+    window.location.hash = "";
+  });
+}

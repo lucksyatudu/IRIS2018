@@ -125,6 +125,10 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+        padding-left: 10%;
+    margin-left: -10%;
+    padding-right: 10%;
+    margin-right: -10%;
   }
   /* About IRIS */
 
@@ -135,6 +139,10 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+        padding-left: 10%;
+    margin-left: -10%;
+    padding-right: 10%;
+    margin-right: -10%;
   }
   /* Pronites */
 
@@ -145,6 +153,10 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+        padding-left: 10%;
+    margin-left: -10%;
+    padding-right: 10%;
+    margin-right: -10%;
   }
   /* Envision */
 
@@ -155,6 +167,10 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+        padding-left: 10%;
+    margin-left: -10%;
+    padding-right: 10%;
+    margin-right: -10%;
   }
   .eventHead{
     font-size: 30px;
@@ -268,6 +284,17 @@
     font-size: 2rem;
     cursor: pointer;
   }
+  .eventNav{
+    cursor: pointer;
+  }
+  .eventNav:hover{
+    background: #ddd;
+    color: black;
+  }
+  .eventNavActive{
+    background: rgba(51,51,51,0.9);
+    border-left: 6px solid tomato;
+  }
   /* Events Details */
 
   /* Sports */
@@ -277,6 +304,10 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+        padding-left: 10%;
+    margin-left: -10%;
+    padding-right: 10%;
+    margin-right: -10%;
   }
   /* Sports */
 
@@ -287,6 +318,10 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat; 
+        padding-left: 10%;
+    margin-left: -10%;
+    padding-right: 10%;
+    margin-right: -10%;
   }
   .sponsorItem{
     width: 20%;
@@ -417,7 +452,7 @@
     	top: 0;
     	width: 100%;
     	margin-top: -12px;
-      padding: .1rem 1rem;
+      padding: 0rem 0rem;
       font-family: 'Megrim', cursive;
   }
 
@@ -434,6 +469,15 @@
   .navbar a:hover {
     	background: #ddd;
     	color: black;
+  }
+
+  #regButton{
+    background:lavenderblush;
+    color:black;
+  }
+  #regButton:hover{
+    background: coral;
+    color: #f2f2f2;
   }
   /* Large Screen Menu */
 
@@ -534,6 +578,47 @@
   background-color: rgb(256,256,256,0.5)
 }
 /* Sideber Related CSS */
+
+/* Register Panel CSS */
+.regnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.regnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0s;
+}
+
+.regnav a:hover {
+    color: #f1f1f1;
+}
+
+.regnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .regnav {padding-top: 15px;}
+  .regnav a {font-size: 18px;}
+}
+/* Register Panel CSS */
 
 /* Text Related CSS */
 .text_body{

@@ -71,8 +71,7 @@
 
 						    		<!-- Text -->
 						    		<div id="landing_text">
-						    			IIM Indore's Annual <br>
-						    			Cultural, Managment and Sports Festival
+						    			<p></p>
 						    		</div>
 						    		<!-- Text -->
 
@@ -124,6 +123,30 @@
 									</div>
 					    		</div>
 					    		<!-- Left Panel -->
+
+					    		<!-- Register Panel -->
+					    		<div id="regPanel" class="regnav">
+								  <a href="javascript:void(0)" class="closebtn" onclick="closeRegNav()">&times;</a>
+								  <a href="https://dare2compete.com/f/iris-2018-indian-institute-of-management-iim-indore-3613"
+								   target="_blank">
+								  	<div>
+								  		<h3>Events</h3>
+								  		<h6>Register for Events</h6>
+								  	</div>
+								  	</a>
+								  	<hr style="border: 1px;border-top: 1px solid rgba(255,255,255,1);">
+								  <a href="#"><div>
+								  		<h3>Accomodation</h3>
+								  		<h6>Book Your Accomodation for IRIS.<br>
+								  		Aaccess to all pronites included with Accomodation.</h6>
+								  	</div></a>
+								  	<hr style="border: 1px;border-top: 1px solid rgba(255,255,255,1);">
+								  <a href="#"><div>
+								  		<h3>Sports</h3>
+								  		<h6>Pay Rs 500, play any number of sports</h6>
+								  	</div></a>
+								</div>
+								<!-- Register Panel -->
 
 					    		<!-- Page Contents -->
 					    		<div id="contents">

@@ -13,15 +13,6 @@ const skrollrRefresh = gpu.createKernel(function() {
 
 $(document).ready(function () {
 
-	/*
-	  #29323c , #485563
-	  red, yellow
-	  #42275a , #734b6d 
-	  #141e30 , #243b55
-	  
-	  background-image: linear-gradient(to bottom right, #150921 , #411b4a );
-	*/
-
 	//Mouse Movement Functions
 	var halfX=screen.width/2;
 	var width=$("#contents").innerWidth();

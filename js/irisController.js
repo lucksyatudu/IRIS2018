@@ -94,16 +94,20 @@ function irisController($scope, $http, $sce){
 		//console.log(name);
 		$scope.eventDetails=object;
 		if($scope.eventDetails.about!=undefined && $scope.eventDetails.about!=""){
-			$('#eventContacts').css({'display':'none'});
+			$('#eventContactsSection').css({'display':'none'});
+			$('#eventAbout').addClass('eventNavActive');
 			$scope.displayText=$scope.eventDetails.about;
 		}else if($scope.eventDetails.format!=undefined && $scope.eventDetails.format!=""){
-			$('#eventContacts').css({'display':'none'});
+			$('#eventContactsSection').css({'display':'none'});
+			$('#eventFormat').addClass('eventNavActive');
 			$scope.displayText=$scope.eventDetails.format;
 		}else if($scope.eventDetails.rules!=undefined && $scope.eventDetails.rules!=""){
-			$('#eventContacts').css({'display':'none'});
+			$('#eventContactsSection').css({'display':'none'});
+			$('#eventRules').addClass('eventNavActive');
 			$scope.displayText=$scope.eventDetails.rules;
 		}else{
-			$('#eventContacts').fadeIn(500);
+			$('#eventContactsSection').fadeIn(500);
+			$('#eventContacts').addClass('eventNavActive');
 		}
 		$('#eventDetails').fadeIn(500).addClass("animated fadeIn");
 		$('#eventDetails').delay(400).removeClass("animated fadeIn");
@@ -122,20 +126,28 @@ function irisController($scope, $http, $sce){
 
 	$scope.changeEventDetailContent=function(sectionName){
 		$('#detailsBox').fadeOut(0);
+		$('#eventAbout').removeClass('eventNavActive');
+		$('#eventFormat').removeClass('eventNavActive');
+		$('#eventRules').removeClass('eventNavActive');
+		$('#eventContacts').removeClass('eventNavActive');
 		if(sectionName=='about'){
-			$('#eventContacts').css({'display':'none'});
+			$('#eventContactsSection').css({'display':'none'});
+			$('#eventAbout').addClass('eventNavActive');
 			$scope.displayText=$scope.eventDetails.about;
 			$('#detailsBox').fadeIn(0);
 		} else if(sectionName=='format'){
-			$('#eventContacts').css({'display':'none'});
+			$('#eventContactsSection').css({'display':'none'});
+			$('#eventFormat').addClass('eventNavActive');
 			$scope.displayText=$scope.eventDetails.format;
 			$('#detailsBox').fadeIn(0);
 		} else if(sectionName=='rules'){
-			$('#eventContacts').css({'display':'none'});
+			$('#eventContactsSection').css({'display':'none'});
+			$('#eventRules').addClass('eventNavActive');
 			$scope.displayText=$scope.eventDetails.rules;
 			$('#detailsBox').fadeIn(0);
 		} else if(sectionName=='contact'){
-			$('#eventContacts').fadeIn(0);
+			$('#eventContactsSection').fadeIn(0);
+			$('#eventContacts').addClass('eventNavActive');
 			$scope.displayText="";
 			$('#detailsBox').fadeIn(0);
 		}
