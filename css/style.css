@@ -28,6 +28,28 @@
   display: inline-block;
   margin-left: -54px;
   cursor: pointer;
+  animation:continueAnime 5s;
+  -moz-animation:continueAnime 5s infinite; /* Firefox */
+  -webkit-animation:continueAnime 5s infinite; /* Safari and Chrome */
+}
+
+ @-moz-keyframes continueAnime /* Firefox */
+{
+  0%   {box-shadow: 0 5px 5px rgba(145, 92, 182, .4);}
+  50%  {box-shadow: 0 15px 25px rgba(145, 92, 182, .4);}
+  100%   {box-shadow: 0 5px 5px rgba(145, 92, 182, .4);}
+}
+ 
+@-webkit-keyframes continueAnime /* Firefox */
+{
+    0%   {box-shadow: 0 5px 5px rgba(145, 92, 182, .4);}
+    50%  {box-shadow: 0 15px 25px rgba(145, 92, 182, .4);}
+    100%   {box-shadow: 0 5px 5px rgba(145, 92, 182, .4);}
+}
+
+.enter_btn:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
 #contents{
@@ -515,7 +537,7 @@
 
 /* Text Related CSS */
 .text_body{
-	font-size: 20px;
+	font-size: 15px;
   text-align: justify;
   color: #fff;
 }

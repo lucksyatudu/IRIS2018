@@ -88,12 +88,25 @@ function irisController($scope, $http, $sce){
 	init();
 
 	$scope.focusOver="";
+	$scope.displayText="";
 
 	$scope.viewEventDetails=function(object){
 		//console.log(name);
 		$scope.eventDetails=object;
-		$('#eventDetails').addClass("animated fadeIn");
-		$('#eventDetails').delay(400).fadeIn(500).removeClass("animated fadeIn");
+		if($scope.eventDetails.about!=undefined && $scope.eventDetails.about!=""){
+			$('#eventContacts').css({'display':'none'});
+			$scope.displayText=$scope.eventDetails.about;
+		}else if($scope.eventDetails.format!=undefined && $scope.eventDetails.format!=""){
+			$('#eventContacts').css({'display':'none'});
+			$scope.displayText=$scope.eventDetails.format;
+		}else if($scope.eventDetails.rules!=undefined && $scope.eventDetails.rules!=""){
+			$('#eventContacts').css({'display':'none'});
+			$scope.displayText=$scope.eventDetails.rules;
+		}else{
+			$('#eventContacts').fadeIn(500);
+		}
+		$('#eventDetails').fadeIn(500).addClass("animated fadeIn");
+		$('#eventDetails').delay(400).removeClass("animated fadeIn");
 	}
 
 	$scope.register=function(name){
@@ -104,5 +117,27 @@ function irisController($scope, $http, $sce){
 		//console.log("a");
 		$('#'+name).fadeOut(500).addClass("animated zoomOut");
 		$('#'+name).fadeOut(500).removeClass("animated zoomOut");
+		$scope.displayText="";
+	}
+
+	$scope.changeEventDetailContent=function(sectionName){
+		$('#detailsBox').fadeOut(0);
+		if(sectionName=='about'){
+			$('#eventContacts').css({'display':'none'});
+			$scope.displayText=$scope.eventDetails.about;
+			$('#detailsBox').fadeIn(0);
+		} else if(sectionName=='format'){
+			$('#eventContacts').css({'display':'none'});
+			$scope.displayText=$scope.eventDetails.format;
+			$('#detailsBox').fadeIn(0);
+		} else if(sectionName=='rules'){
+			$('#eventContacts').css({'display':'none'});
+			$scope.displayText=$scope.eventDetails.rules;
+			$('#detailsBox').fadeIn(0);
+		} else if(sectionName=='contact'){
+			$('#eventContacts').fadeIn(0);
+			$scope.displayText="";
+			$('#detailsBox').fadeIn(0);
+		}
 	}
 }
