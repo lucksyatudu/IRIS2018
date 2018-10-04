@@ -56,6 +56,7 @@ $(document).ready(function () {
 function removeLoader() {
   //document.getElementById("section_loader").innerHTML = "Hello World";
   $('#section_loader').delay(400).addClass("animated fadeOut").fadeOut(50);
+  $('#bgVideo').delay(400).addClass("animated fadeOut").fadeOut(50);
   $('#contents').delay(400).fadeIn(200).addClass("animated fadeInUpBig");
   if(screen.width>=575){
      $('#menuLg').delay(400).fadeIn(200).addClass("animated fadeInDown");
@@ -95,7 +96,7 @@ $(window).bind("scroll", function() {
 });
 
 var keydowns=0;
-var tags=["#headings","#line1","#aboutIRIS","#pronites","#envision","#events","#sports","#sponsors","#register","#contactUs"];
+var tags=["#headings","#line1","#aboutIRIS","#pronites","#envision","#events","#sports","#sponsors","#gallery","#contactUs"];
 
 $(document).keydown(function(e) {
     switch(e.which) {

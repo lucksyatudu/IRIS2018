@@ -58,6 +58,19 @@
 			<section>
 				<div  id="loader">
 					<div  class="vertical-centered-box">
+						<div>
+							<video autoplay muted loop id="bgVideo" style="left: 50%;
+    							top: 50%;
+							    height: 100%;
+							    width: 100%;
+							    overflow: hidden;
+							    object-fit: fill;
+							    position: absolute;
+							    transform: translate(-50%,-50%);
+							    display: inline-block;">
+							  <source src="Untitled.mp4" type="video/mp4">
+							</video>
+						</div>
 						<div id="particles-js" class="particle-container-box">
 					  		<div id="particles-js" class="content">
 					  			<div id="section_loader">
@@ -348,10 +361,18 @@
 					    			</div>
 
 					    			<!-- Register -->
+					    			<!--
 					    			<?php
-					    				include "pages/register.html";
+					    				//include "pages/register.html";
 					    			?>
+					    			-->
 					    			<!-- Register -->
+
+					    			<!-- Gallery -->
+										<?php
+					    				include "pages/gallery.html";
+										?>  
+					    			<!-- Gallery -->
 
 					    			<!-- Clear Space -->
 					    			<div class="container clearfix" style="height: 20px"></div>
