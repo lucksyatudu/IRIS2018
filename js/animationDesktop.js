@@ -37,8 +37,11 @@ $(document).ready(function () {
 	});
 });
 
-var initialColors=["#150921","#29323c","red","#42275a","#141e30","#8E0E00","#76b852","#fc00ff"];
-var finalColors=["#411b4a","#485563","yellow","#734b6d","#243b55","#1F1C18","#8DC26F","#00dbde"];
+//var initialColors=["#150921","#29323c","red","#42275a","#141e30","#8E0E00","#76b852","#fc00ff"];
+//var finalColors=["#411b4a","#485563","yellow","#734b6d","#243b55","#1F1C18","#8DC26F","#00dbde"];
+
+var initialColors=["#150921","#29323c","red","#3E5151","#22c1c3","#cb2d3e","#2C3E50","#fc00ff"];
+var finalColors=["#411b4a","#485563","yellow","#DECBA4","#fdbb2d","#ef473a","#4CA1AF","#00dbde"];
 
 $(window).scroll(function() {
 	var currentScroll = $(window).scrollTop();
@@ -58,23 +61,30 @@ $(window).scroll(function() {
 					if(currentScroll>sportsOffset){
 						if(currentScroll>sponsorsOffset){
 							cssValue=cssValue+initialColors[6]+' , '+finalColors[6]+' )';
+							keydowns=7;
 						}else{
 							cssValue=cssValue+initialColors[5]+' , '+finalColors[5]+' )';
+							keydowns=6;
 						}
 					}else{
 						cssValue=cssValue+initialColors[4]+' , '+finalColors[4]+' )';
+						keydowns=5;
 					}
 				}else{
 					cssValue=cssValue+initialColors[3]+' , '+finalColors[3]+' )';
+					keydowns=4;
 				}
 			}else{
 				cssValue=cssValue+initialColors[2]+' , '+finalColors[2]+' )';
+				keydowns=3;
 			}
 		}else{
 			cssValue=cssValue+initialColors[1]+' , '+finalColors[1]+' )';
+			keydowns=2;
 		}
 	}else{
 		cssValue=cssValue+initialColors[0]+' , '+finalColors[0]+' )';
+		keydowns=1;
 	}
 
 	$(".vertical-centered-box").css('background-image',cssValue);

@@ -96,7 +96,14 @@ $(window).bind("scroll", function() {
 });
 
 var keydowns=0;
-var tags=["#headings","#line1","#aboutIRIS","#pronites","#envision","#events","#sports","#sponsors","#gallery","#contactUs"];
+/*
+var tags=["#headings","#line1","#knowUsEntry","#aboutIRIS","#pronitesEntry",
+            "#pronites","#envisionEntry","#envision","#eventsEntry","#events",
+            "#sportsEntry","#sports","#sponsorsEntry","#sponsors","#gallery","#contactUs"];
+*/
+var tags=["#headings","#line1","#aboutIRIS",
+            "#pronites","#envision","#events",
+            "#sports","#sponsors","#gallery","#contactUs"];
 
 $(document).keydown(function(e) {
     switch(e.which) {
@@ -109,7 +116,7 @@ $(document).keydown(function(e) {
           var hash = tags[keydowns];
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 2500, function(){
+          }, 1500, function(){
             window.location.hash = hash;
           });
         }          
@@ -119,12 +126,12 @@ $(document).keydown(function(e) {
         break;
 
         case 40: // down
-        if(keydowns<9){
+        if(keydowns<tags.length){
           keydowns++;
           var hash = tags[keydowns];
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 2500, function(){
+          }, 1500, function(){
             window.location.hash = hash;
           });
         }
