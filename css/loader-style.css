@@ -22,12 +22,28 @@ body .vertical-centered-box {
   #42275a , #734b6d 
   #141e30 , #243b55
   */
-  background-image: linear-gradient(to bottom right, #150921 , #411b4a );
+  background: linear-gradient(to bottom right, #150921 , #411b4a );
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
   z-index: -0;
+  /*animation: backgroundGradiant 30s ease infinite;*/
   /*background-color: #2c2d44;*/
+}
+@keyframes backgroundGradiant{
+  /*
+  var initialColors=["#150921","#29323c","red","#3E5151","#22c1c3","#cb2d3e","#2C3E50","#fc00ff"];
+var finalColors=["#411b4a","#485563","yellow","#DECBA4","#fdbb2d","#ef473a","#4CA1AF","#00dbde"];
+*/
+  0%{background: linear-gradient(to bottom right, #150921 , #411b4a );}
+  12%{background: linear-gradient(to bottom right, #29323c , #485563 );}
+  25%{background: linear-gradient(to bottom right, red , yellow );}
+  37%{background: linear-gradient(to bottom right, #3E5151 , #DECBA4 );}
+  50%{background: linear-gradient(to bottom right, #22c1c3 , #fdbb2d );}
+  62%{background: linear-gradient(to bottom right, #cb2d3e , #ef473a );}
+  75%{background: linear-gradient(to bottom right, #2C3E50 , #4CA1AF );}
+  87%{background: linear-gradient(to bottom right, #fc00ff , #00dbde );}
+  100%{background: linear-gradient(to bottom right, #150921 , #411b4a );}
 }
 body .vertical-centered-box:after {
   content: '';

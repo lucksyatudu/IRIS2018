@@ -45,12 +45,49 @@ var finalColors=["#411b4a","#485563","yellow","#DECBA4","#fdbb2d","#ef473a","#4C
 
 $(window).scroll(function() {
 	var currentScroll = $(window).scrollTop();
+	var headingsOffset = $("#headings").offset().top;
+	var line1Offset = $("#line1").offset().top;
+	var svhImg2Offset = $("#svgImg2").offset().top;
+	var svgImg3Offset = $("#svgImg3").offset().top;
+    var svgImg4Offset = $("#svgImg4").offset().top;
+    var svgImg5Offset = $("#svgImg5").offset().top;
+    var svgImg6Offset = $("#svgImg6").offset().top;
+    var svgImg7Offset = $("#svgImg7").offset().top;
+    var galleryOffset = $("#gallery").offset().top;
+    var contactUsOffset = $("#contactUs").offset().top;
     var aboutIrisOffset = $("#aboutIRIS").offset().top;
     var pronitesOffset = $("#pronites").offset().top;
     var envisionOffset = $("#envision").offset().top;
     var eventsOffset = $("#events").offset().top;
     var sportsOffset = $("#sports").offset().top;
     var sponsorsOffset = $("#sponsors").offset().top;
+    var offsets=[
+	    $("#headings").offset().top,
+		$("#line1").offset().top,
+		$("#svgImg2").offset().top,
+		$("#aboutIRIS").offset().top,
+		$("#svgImg3").offset().top,
+		$("#pronites").offset().top,
+	    $("#svgImg4").offset().top,
+	    $("#envision").offset().top,
+	    $("#svgImg5").offset().top,
+	    $("#events").offset().top,
+	    $("#svgImg6").offset().top,
+	    $("#sports").offset().top,
+	    $("#svgImg7").offset().top,
+	    $("#gallery").offset().top,
+	    $("#sponsors").offset().top,
+	    $("#contactUs").offset().top
+    ];
+
+    for(var i=0;i<offsets.length;i++){
+    	if(currentScroll>offsets[i]){
+    		keydowns=i+1;
+    	}else{
+    		console.log("b"+i);
+    		break;
+    	}
+    }
     
 	//console.log(currentScroll);
 	var cssValue="linear-gradient(to bottom right, "
@@ -61,31 +98,34 @@ $(window).scroll(function() {
 					if(currentScroll>sportsOffset){
 						if(currentScroll>sponsorsOffset){
 							cssValue=cssValue+initialColors[6]+' , '+finalColors[6]+' )';
-							keydowns=7;
+							//keydowns=14;
 						}else{
 							cssValue=cssValue+initialColors[5]+' , '+finalColors[5]+' )';
-							keydowns=6;
+							//keydowns=13;
 						}
 					}else{
 						cssValue=cssValue+initialColors[4]+' , '+finalColors[4]+' )';
-						keydowns=5;
+						//keydowns=11;
 					}
 				}else{
 					cssValue=cssValue+initialColors[3]+' , '+finalColors[3]+' )';
-					keydowns=4;
+					//keydowns=9;
 				}
 			}else{
 				cssValue=cssValue+initialColors[2]+' , '+finalColors[2]+' )';
-				keydowns=3;
+				//keydowns=7;
 			}
 		}else{
 			cssValue=cssValue+initialColors[1]+' , '+finalColors[1]+' )';
-			keydowns=2;
+			//keydowns=5;
 		}
 	}else{
 		cssValue=cssValue+initialColors[0]+' , '+finalColors[0]+' )';
-		keydowns=1;
+		//keydowns=3;
 	}
 
-	$(".vertical-centered-box").css('background-image',cssValue);
+
+	$(".vertical-centered-box").css('background',cssValue);
+	//$(".vertical-centered-box").animate({background:cssValue});
+	//console.log("AJ: ");
 });

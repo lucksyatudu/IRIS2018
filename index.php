@@ -189,7 +189,7 @@
 					    			<!-- Clear Space -->
 
 
-					    			<div class="container" style="width:100%">
+					    			<div class="container" style="width:100%;">
 					    				<?php
 					    				include "animations/lines-1.svg";
 					    				?>
@@ -214,7 +214,7 @@
 					    			<div class="container">-->
 					    				<div class="row">
 						    				<div class="col-lg-6 col-md-6 col-sm-0 col-xs-0 hidden-md-down">
-						    					<div id="blockDates">
+						    					<div id="blockDates" style="position:relative;">
 						    						<?php
 						    						include "img/date-title.svg";
 						    						?>
