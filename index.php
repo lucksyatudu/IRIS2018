@@ -18,6 +18,7 @@
 		<link href="css/loader-style.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/canvas-style.css" rel="stylesheet">
+		<link href="css/timeline.css" rel="stylesheet">
 
 		<!-- Load an icon library -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,6 +49,7 @@
 		<script type="text/javascript" src="js/animationDesktop.js"></script>
 		<script type="text/javascript" src="js/canvas.js"></script>
 		<script type="text/javascript" src="js/countdown.js"></script>
+		<script type="text/javascript" src="js/timeline.js"></script>
 
 	</head>
 
