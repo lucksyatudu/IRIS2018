@@ -20,10 +20,10 @@ $(document).ready(function () {
     $("#landing_text p").fadeOut(1800, function() {
       flag=!flag;
       if(flag){
-        $('#landing_text').css({'margin-left':'-235px'});
+        //$('#landing_text').css({'margin-left':'-235px'});
         $(this).html(message[0]).delay(300).fadeIn(1500);
       }else{
-        $('#landing_text').css({'margin-left':'-70px'});
+        //$('#landing_text').css({'margin-left':'-70px'});
         $(this).html(message[1]).delay(300).fadeIn(1500);
       }
     });

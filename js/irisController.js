@@ -63,6 +63,13 @@ function irisController($scope, $http, $sce){
    			});
 	}	
 
+	var getEnvisionSpeakers=function(){
+		$http.get("php/getEnvisionSpeakers.php")
+   			.then(function (response) {
+   				$scope.envisionSpeakerDetails = response.data;
+   			});
+	}
+
 	var transformToHTML=function(array){
 		for(var i=0;i<array.length;i++){
 			array[i].about=$sce.trustAsHtml(array[i].about);
@@ -83,6 +90,7 @@ function irisController($scope, $http, $sce){
 		getCulturalEvents();
 		getManagmentEvents();
 		getSports();
+		getEnvisionSpeakers();
 	}
 
 	init();

@@ -3,17 +3,15 @@
 {
 height: 600px;
 width: 100%;
-background-color: #ddd;
 overflow: hidden;
 position: relative;
-#overflow-x: scroll;
-  margin-top: 30px;
-  display: inline-block;
+overflow-x: scroll;
+margin-top: 30px;
+display: inline-block;
 }
 
 #thumbs
 {
-background-color: #ddd;
 position: absolute;
 top: 0px;
 left: 0px;
@@ -21,12 +19,12 @@ height: 100%;
 width: auto;
 overflow: hidden;
 white-space: nowrap;
-padding: 30px 100px;
+padding: 10px 10px;
 }
 
 .history-block {
   height: 100%;
-  width: 300px;
+  width: 20vw;
   background-color: #cdcdcd;
   margin: 0 -2px;
   border-right: 1px solid #fff;
@@ -38,6 +36,7 @@ padding: 30px 100px;
   cursor: pointer;
   box-shadow: 2px 5px 20px rgba(0,0,0,0.8);
   transition: width 0.2s;
+  overflow: hidden;
 }
 
 .history-block:last-of-type {
@@ -69,7 +68,7 @@ padding: 30px 100px;
 .title {
   position: absolute;
   display: block;
-  width: 260px;
+  width: 18vw;
     top: 60px;
     font-size: 15px;
     margin: 30px;
@@ -162,31 +161,21 @@ text-align: center;
 }
 
 .bg-66 {
-  background: url(http://www.unido.org/uploads/tx_templavoila/history_07.jpg);
+  background: url('../img/record-12.jpg');
   background-size:cover;
 }
 
 .bg-76 {
-  background: url(http://austria-forum.org/attach/Wissenssammlungen/Bibliothek/Wien_mit_den_Augen_des_Adlers/Wien_der_Moderne/UNO-City,_Austria_Center_Vienna/dkaiser_hav_25.jpg);
+  background: url('../img/record-13.jpg');
   background-size:cover;
 }
 
 .bg-86 {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Power_Plant_(Tianjin,_China).jpg');
+  background: url('../img/record-15.jpg');
   background-size:cover;
 }
 
 .bg-96 {
-  background: url(http://www.oxfordbusinessgroup.com/sites/default/files/styles/chapter_header__710x233_/public/chapter_headers/ind1_2.png?itok=uxI_081i&c=af7608f5f35cf219c326e9b6e6a7d34c);
-  background-size:cover;
-}
-
-.bg-06 {
-  background: url(http://www.3adi.org/tl_files/3ADIDocuments/Pictures/Greenshot_2014-01-08_18-32-54.jpg);
-  background-size:cover;
-}
-
-.bg-16 {
-  background: url(https://i.dailymail.co.uk/i/pix/2012/07/23/article-0-142DF918000005DC-387_468x665.jpg);
+  background: url('../img/record-16.jpg');
   background-size:cover;
 }

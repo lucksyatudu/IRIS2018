@@ -84,7 +84,7 @@ $(window).scroll(function() {
     	if(currentScroll>offsets[i]){
     		keydowns=i+1;
     	}else{
-    		console.log("b"+i);
+    		//console.log("b"+i);
     		break;
     	}
     }

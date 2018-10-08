@@ -1,0 +1,12 @@
+UPDATE `iris`.`event_details` SET `logo`='img/events/ashwamedha.png' WHERE `ID`='1';
+
+UPDATE `iris`.`event_details` SET `logo`='img/events/beatmarket.png' WHERE `ID`='7';
+UPDATE `iris`.`event_details` SET `logo`='img/events/chainreaction.png' WHERE `ID`='9';
+
+
+UPDATE `iris`.`event_details` SET `logo`='img/events/chanakya.png' WHERE `ID`='10';
+UPDATE `iris`.`event_details` SET `logo`='img/events/kalpavriksha.png' WHERE `ID`='8';
+UPDATE `iris`.`event_details` SET `logo`='img/events/mycampaign.png' WHERE `ID`='3';
+UPDATE `iris`.`event_details` SET `logo`='img/events/photography.png' WHERE `ID`='11';
+UPDATE `iris`.`event_details` SET `logo`='img/events/pratibimb.png' WHERE `ID`='2';
+UPDATE `iris`.`event_details` SET `logo`='img/events/zoi.png' WHERE `ID`='4';
