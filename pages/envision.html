@@ -17,9 +17,14 @@
 				<p>All our tasks and events  are based on real-life cases & situations to help understand how theories can be applied to even the most twisted scenarios.</p>
 				<p>We help you understand how to communicate with newer folks, create business like simulations etc.</p>
 			</div>
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text_body_centered" style="overflow-y:auto; padding-left: 100px; height: 300px; background: rgba(50,50,50,0.6);">
+			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" style="padding-left: 100px;">
 				<div class="row">
-					<div class="m-1 p-1" style="width:150px" ng-repeat="speaker in envisionSpeakerDetails">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<H1 class="headings" style="margin-top:-10px">Past Speakers</H1>
+					</div>
+				</div>
+				<div class="row" style="background: rgba(50,50,50,0.6);overflow-y:auto;height: 300px;">
+					<div class="m-1 p-1 text_body_centered" style="width:150px" ng-repeat="speaker in envisionSpeakerDetails">
 						<img ng-src="{{speaker.img}}">
 						<br><span>{{speaker.name}}</span>
 						<span ng-show="speaker.desig"><br>{{speaker.desig}}</span>

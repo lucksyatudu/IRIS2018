@@ -40,8 +40,8 @@ $(document).ready(function () {
 //var initialColors=["#150921","#29323c","red","#42275a","#141e30","#8E0E00","#76b852","#fc00ff"];
 //var finalColors=["#411b4a","#485563","yellow","#734b6d","#243b55","#1F1C18","#8DC26F","#00dbde"];
 
-var initialColors=["#150921","#29323c","red","#3E5151","#22c1c3","#cb2d3e","#2C3E50","#fc00ff"];
-var finalColors=["#411b4a","#485563","yellow","#DECBA4","#fdbb2d","#ef473a","#4CA1AF","#00dbde"];
+var initialColors=["#150921","#29323c","#B993D6","#3E5151","#22c1c3","#cb2d3e","#2C3E50","#fc00ff"];
+var finalColors=["#411b4a","#485563","#8CA6DB","#DECBA4","#fdbb2d","#ef473a","#4CA1AF","#00dbde"];
 
 $(window).scroll(function() {
 	var currentScroll = $(window).scrollTop();

@@ -6,3 +6,7 @@
 	font-family: "Arciform";
 	src: url("font/Arciform.otf");
 }
+@font-face {
+	font-family: "Vera";
+	src: url("font/Vera.ttf");
+}

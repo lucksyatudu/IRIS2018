@@ -139,6 +139,17 @@
 					    		</div>
 					    		<!-- Left Panel -->
 
+					    		<!-- Campus Ambassador -->
+					    		<div id="caRibbon" class="corner-ribbon bottom-right sticky red shadow">
+					    			Become a Campus Ambassador
+					    		</div>
+					    		<?php
+					    			include "pages/campusAmbassador.html";
+					    		?>
+					    		<!-- Campus Ambassador -->
+
+					    		
+
 					    		<!-- Register Panel -->
 					    		<div id="regPanel" class="regnav">
 								  <a href="javascript:void(0)" class="closebtn" onclick="closeRegNav()">&times;</a>

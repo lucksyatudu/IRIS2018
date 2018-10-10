@@ -14,7 +14,7 @@ $(document).ready(function () {
     //$('.particles-js-canvas-el').css({'z-index':'0'});
   })
 
-  var message=["IIM Indore's Annual <br> Cultural, Managment and Sports Festival","16 - 18 Nov'18"];
+  var message=["IIM Indore's Annual <br> Cultural, Management and Sports Festival","16 - 18 Nov'18"];
   var flag=false;
   function fader() {
     $("#landing_text p").fadeOut(1800, function() {
@@ -50,6 +50,11 @@ $(document).ready(function () {
   });
   
   //jQuery.scrollspeed(100,800); 
+
+  //Campus Ambassador
+  $("#caRibbon").click(function(){
+    $("#caDetails").fadeIn();
+  });
 });
 
 //Post Page Load Functions
@@ -58,6 +63,8 @@ function removeLoader() {
   $('#section_loader').delay(400).addClass("animated fadeOut").fadeOut(50);
   $('#bgVideo').delay(400).addClass("animated fadeOut").fadeOut(50);
   $('#contents').delay(400).fadeIn(200).addClass("animated fadeInUpBig");
+  $('.corner-ribbon').delay(400).fadeIn(50);
+  
   if(screen.width>=575){
      $('#menuLg').delay(400).fadeIn(200).addClass("animated fadeInDown");
      $('#leftSideber').delay(400).fadeIn(500);
@@ -85,6 +92,10 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+function closeCA() {
+    $("#caDetails").fadeOut();
+  }
 
 // Scroll Functions
 $(window).bind("scroll", function() {
@@ -142,7 +153,7 @@ $(document).keydown(function(e) {
             //window.location.hash = hash;
           });
         }
-        //console.log("J: "+keydowns);
+        console.log("J: "+keydowns);
           //console.log("down")
         break;
 

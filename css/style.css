@@ -5,7 +5,7 @@
   top: 50%;
   transform: translate(-50%,-50%);
   font-family: 'Megrim', cursive;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bolder;
   color: white;
   text-align: center;
@@ -18,7 +18,7 @@
 	position: absolute;
   left: 50%;
   top: 80%;
-  font-family: 'Arciform';
+  font-family: 'Vera';
   font-size: large;
 }
 
@@ -347,6 +347,46 @@
   }
   /* Contact */
 
+  /* Campus Ambassador*/
+  /* The ribbons */
+
+.corner-ribbon{
+  display:none;
+  width: 220px;
+  z-index: 2;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  color: #f0f0f0;
+  cursor: pointer;
+  border-style: dashed;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.corner-ribbon.bottom-right{
+  top: auto;
+  right: -50px;
+  bottom: 25px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.corner-ribbon.red{background: #e43;}
+  /* Campus Ambassador*/
+
   /* Register */
   .register{
     background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(10,10,10,0.4)), to(rgba(10,10,10,0.4)), color-stop(50%, rgba(10,10,10,0.6)));;
@@ -562,6 +602,51 @@
   /* Small Screen Menu */
 /* Menu Related CSS */
 
+/*Campus Ambassador*/
+#caDetails{
+  display: none;
+}
+.ca-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: auto;
+    transition: 0.5s;
+}
+.ca-overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    /*text-align: center;*/
+    font-family: 'Megrim', cursive;
+    margin-top: 30px;
+}
+.ca-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.ca-overlay a:hover, .ca-overlay a:focus {
+    color: #f1f1f1;
+}
+
+.ca-overlay .closebtn {
+    position: absolute;
+    top: 1%;
+    right: 45px;
+    font-size: 2em;
+}
+/*Campus Ambassador*/
+
 /* Sideber Related CSS */
 #leftSideber{
   display: none;
@@ -637,11 +722,13 @@
 
 /* Text Related CSS */
 .text_body{
+  font-family: 'Vera';
 	font-size: 15px;
   text-align: justify;
   color: #fff;
 }
 .text_body_centered{
+  font-family: 'Vera';
   font-size: 15px;
   text-align: center;
   color: #fff;
