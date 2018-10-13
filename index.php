@@ -161,13 +161,14 @@
 								  	</div>
 								  	</a>
 								  	<hr style="border: 1px;border-top: 1px solid rgba(255,255,255,1);">
-								  <a href="#"><div>
+								  <a href="https://www.thecollegefever.com/events/iris18-cultural-and-management-fest-of-iim-indore"
+								   target="_blank"><div>
 								  		<h3>Accomodation</h3>
 								  		<h6>Book Your Accomodation for IRIS.<br>
 								  		Aaccess to all pronites included with Accomodation.</h6>
 								  	</div></a>
 								  	<hr style="border: 1px;border-top: 1px solid rgba(255,255,255,1);">
-								  <a href="#"><div>
+								  <a href="https://www.thecollegefever.com/events/iris18-sports"><div>
 								  		<h3>Sports</h3>
 								  		<h6>Pay Rs 500, play any number of sports</h6>
 								  	</div></a>
