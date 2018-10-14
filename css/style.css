@@ -234,6 +234,9 @@
     margin-top: 30px;
     cursor: pointer;
   }
+  .eventRegisterButton:hover{
+    color:black;
+  }
   .eventViewButton.ng-hide-add,
   .eventViewButton.ng-hide-remove {
     -webkit-transition : 0.2s ease-in-out opacity;

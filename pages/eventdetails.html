@@ -17,10 +17,15 @@
 					<div id="eventFormat"  class="row p-1 ml-1 eventNav" ng-show="eventDetails.format" ng-click="changeEventDetailContent('format')">Format</div>
 					<div id="eventRules"  class="row p-1 ml-1 eventNav" ng-show="eventDetails.rules" ng-click="changeEventDetailContent('rules')">Rules</div>
 					<div id="eventContacts"  class="row p-1 ml-1 eventNav" ng-show="eventDetails.namePOC1" ng-click="changeEventDetailContent('contact')">Contact</div>
-					li><button class="eventRegisterButton" ng-show="focusOver==event.name" ng-click="register('ashwamedha')">Register</button></li>
-					<div class="row p-1 m-1 eventNav" ng-show="eventDetails.smURL">
-						<a ng-href="{{eventDetails.smURL}}" style="width: 100%;" target="_blank">
+					<div class="row p-1 ml-1 eventNav" ng-show="eventDetails.smURL">
+						<a ng-href="{{eventDetails.smURL}}" style="width:100%; color:#fff" target="_blank">
 							<i style="color:#fff" class="fa fa-fw fa-facebook"></i>
+							<span>Connect on Facebook</span>
+						</a>
+					</div>
+					<div class="row p-1 ml-1 eventNav" ng-show="eventDetails.regURL">
+						<a ng-href="{{eventDetails.regURL}}" target="_blank" style="width:100%">
+							<button class="eventRegisterButton" style="margin-top:0px;">Register</button>
 						</a>
 					</div>
 
@@ -45,8 +50,7 @@
 					</div>
 				</div>
 			</div>
-
-			
+		
 		</div>
 	</div>
 </div>
