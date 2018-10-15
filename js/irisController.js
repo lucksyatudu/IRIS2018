@@ -6,6 +6,12 @@ function irisController($scope, $http, $sce){
 	//constants
 	const DEFAULT_EVENT_LOGO = "img/events/logo-def.svg";
 
+	//For Mobile
+	$scope.mobile=false;
+	if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)){
+  		$scope.mobile=true;
+	}
+
 	//init
 	$scope.sponsors;
 	$scope.flagshipEvents;

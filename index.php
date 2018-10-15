@@ -243,24 +243,24 @@
 					    				</div>
 					    				<br>
 					    				<div class="row">
-					    					<div class="col-md-2 clearfix"></div>
-					    					<div class="col-md-2">
+					    					<div class="col-md-2 col-sm-2 col-xs-2 clearfix"></div>
+					    					<div class="col-md-2 col-sm-2 col-xs-2">
 					    						<div class="row cd_head">Days</div>
 					    						<div id="cd_days" class="countdown"></div>
 					    					</div>
-					    					<div class="col-md-2">
+					    					<div class="col-md-2  col-sm-2 col-xs-2">
 					    						<div class="row cd_head">Hours</div>
 					    						<div id="cd_hrs" class="col-md-3 countdown"></div>
 					    					</div>
-					    					<div class="col-md-2">
+					    					<div class="col-md-2  col-sm-2 col-xs-2">
 					    						<div class="row cd_head">Minutes</div>
 					    						<div id="cd_mins" class="col-md-3 countdown"></div>
 					    					</div>
-					    					<div class="col-md-2">
+					    					<div class="col-md-2  col-sm-2 col-xs-2">
 					    						<div class="row cd_head">Seconds</div>
 					    						<div id="cd_sec" class="col-md-3 countdown"></div>
 					    					</div>
-					    						<div class="col-md-2 clearfix"></div>
+					    						<div class="col-md-2 col-sm-2 col-xs-2 clearfix"></div>
 					    				</div>
 					    				<hr class="section-seperator-right" data--10-bottom="width:0%" data-center-top="width:50%">
 					    			</div>
@@ -429,7 +429,11 @@
 					</div>
 				</div>
 			</section>
-			<script src="lib/skrollr.min.js"></script>
+			<script>
+				if( !(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)))
+ 				document.write('<script type="text/javascript" src="lib/skrollr.min.js"><\/script>');
+			</script>
+			<!--<script src="lib/skrollr.min.js"></script>-->
 			<!-- Contents -->
 
 		</div>

@@ -57,6 +57,12 @@ $(document).ready(function () {
   });
 });
 
+//Check for Mobile
+var mobile=false;
+if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)){
+  mobile=true;
+}
+
 //Post Page Load Functions
 function removeLoader() {
   //document.getElementById("section_loader").innerHTML = "Hello World";
@@ -65,15 +71,11 @@ function removeLoader() {
   $('#contents').delay(400).fadeIn(200).addClass("animated fadeInUpBig");
   $('.corner-ribbon').delay(400).fadeIn(50);
   
-  if(screen.width>=575){
+  if(!mobile){
      $('#menuLg').delay(400).fadeIn(200).addClass("animated fadeInDown");
      $('#leftSideber').delay(400).fadeIn(500);
-  }else{
-    $('#menuSm').delay(400).fadeIn(500);
-  }
-
-  var s = skrollr.init({
-      smoothScrolling: true,
+     var s = skrollr.init({
+        smoothScrolling: true,
           smoothScrollingDuration: 500
     });
 
@@ -82,6 +84,9 @@ function removeLoader() {
       skrollr.get().refresh();
       //console.log("refreshed");
     }, 2500);
+  }else{
+    $('#menuSm').delay(400).fadeIn(500);
+  }
 }
 
 //Menu related functions for small screen devices
