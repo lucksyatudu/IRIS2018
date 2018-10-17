@@ -21,7 +21,7 @@
 			<div class="container eventContainer">
 				<div ng-repeat="event in flagshipEvents">
 					<hr>
-					<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
+					<div class="row eventListElement" style="flex-wrap:nowrap;" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 							<img ng-src="{{event.logo}}" width="75" class="eventLogo" onError="this.src = 'img/events/logo-def.svg'">
 						</div>
@@ -57,7 +57,7 @@
 			<div class="container eventContainer">
 				<div ng-repeat="event in managmentEvents">
 					<hr>
-					<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
+					<div class="row eventListElement" style="flex-wrap:nowrap;" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 							<img ng-src="{{event.logo}}" width="75" class="eventLogo">
 						</div>
@@ -93,7 +93,7 @@
 			<div class="container eventContainer">
 				<div ng-repeat="event in culturalEvents">
 					<hr>
-					<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
+					<div class="row eventListElement" style="flex-wrap:nowrap;" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 							<img ng-src="{{event.logo}}" width="75" class="eventLogo">
 						</div>

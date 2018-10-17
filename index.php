@@ -242,7 +242,7 @@
 						    				</div>
 					    				</div>
 					    				<br>
-					    				<div class="row">
+					    				<div class="row" style="flex-wrap: nowrap;">
 					    					<div class="col-md-2 col-sm-2 col-xs-2 clearfix"></div>
 					    					<div class="col-md-2 col-sm-2 col-xs-2">
 					    						<div class="row cd_head">Days</div>
