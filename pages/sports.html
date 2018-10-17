@@ -31,15 +31,15 @@
 
 					<div ng-repeat="event in sports">
 						<hr>
-						<div class="row eventListElement" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
+						<div class="row eventListElement" style="flex-wrap:nowrap;" ng-mouseenter="focusOver=event.name" ng-mouseleave="focusOver=''">
 							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 eventImg" ng-click="viewEventDetails(event)">
 								<img ng-src="{{event.logo}}" width="75" class="eventLogo" onError="this.src = 'img/events/logo-def.svg'">
 							</div>
 							<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10" ng-click="viewEventDetails(event)">
 								<div class="row eventHead">{{event.name}}</div>
-								<div class="row text_body">{{event.tagline}}</div>
+								<div ng-show="{{event.tagline}}" class="row text_body">{{event.tagline}}</div>
 							</div>
-							<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 float-right">
+							<div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 float-right" ng-hide="{{mobile}}">
 								<div class="row" style="margin-top:2.3em">
 									<ul>
 										<li><button class="eventViewButton" ng-show="focusOver==event.name" ng-click="viewEventDetails(event)">View</button></li>
