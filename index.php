@@ -270,7 +270,7 @@
 					    			<div class="container clearfix" style="height: 50px"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-2.svg";
 					    				?>
@@ -283,10 +283,10 @@
 									<!-- About IRIS -->
 
 									<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-3.svg";
 					    				?>
@@ -299,10 +299,10 @@
 					    			<!-- Pro Shows -->
 
 									<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-4.svg";
 					    				?>
@@ -315,10 +315,10 @@
 					    			<!-- Envision -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 					    			
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-5.svg";
 					    				?>
@@ -331,10 +331,10 @@
 					    			<!-- Events -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-6.svg";
 					    				?>
@@ -347,10 +347,10 @@
 					    			<!-- Sports -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-7.svg";
 					    				?>
@@ -365,10 +365,10 @@
 					    			<!-- Sponsors -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-8.svg";
 					    				?>
@@ -389,10 +389,10 @@
 					    			<!-- Gallery -->
 
 					    			<!-- Clear Space -->
-					    			<div class="container clearfix" style="height: 20px"></div>
+					    			<div class="container clearfix" style="height: 20px" ng-hide="{{mobile}}"></div>
 					    			<!-- Clear Space -->
 
-					    			<div class="container">
+					    			<div class="container" ng-hide="{{mobile}}">
 					    				<?php
 					    				include "animations/lines-9.svg";
 					    				?>
